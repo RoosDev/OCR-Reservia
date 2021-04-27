@@ -1,0 +1,180 @@
+/* intégration de la font nécessaire*/  
+
+@font-face {
+  font-family: 'Raleway', verdana, sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Définition des paramètres CSS globaux  */
+
+*{
+font-family: 'Raleway', verdana, sans-serif;
+}
+
+/*  Définition des paramètres pour les écris   */
+  p{
+    font-size: 0.8em;
+    text-align: justify;
+  }
+
+  a{
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+
+  h1{
+    font-size: 1.2em;
+
+
+  }
+
+  h2{
+    font-size: 1.0em;
+
+
+  }
+
+
+
+  ul{
+    list-style-type: none ;
+  }
+
+  span > i[class*="fas"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em; 
+    text-align: center;
+  }
+
+
+/*  Paramétrage des propiétés de la trame générale et éléments communs*/ 
+body{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin:auto;
+
+}
+
+/* Mise en page du header*/
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding : 0 50px 0 50px;
+  
+}
+
+    /*  Mise en forme du logo */
+    #header__logo{
+      width :15%;
+      margin-top: 0px;
+      padding: 0px;
+    }
+
+      #header__logo img{
+        width : 100px;
+        margin-top : 30px;
+      }
+
+      /*      Mise en page du menu de navigation   */
+    nav{
+      margin-top :0px;
+      
+    }
+
+      nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top:0px;
+        
+
+
+      }
+
+      nav ul li{
+        padding-top: 40px;
+        
+      }
+
+      nav ul li:hover, nav ul li:active,nav ul li:focus{
+        border-top: 3px solid rgb(0,101,252);
+      }
+
+        nav ul li a{
+          margin : 30px;
+          font-size: 1.0em;
+          
+        }
+        nav ul li a:hover, nav ul li a:focus, nav ul li:active{
+          color: rgb(0,101,252);         
+        }
+
+        nav ul .signin a{
+          color: rgb(0,101,252);     
+          font-weight: 600;
+        }
+
+
+  /*  Mise en page du container qui accueil le contenu des pages*/
+
+  #container{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding : 0 50px 0 50px;
+
+  }
+
+
+
+    /*  Mise en page du container qui accueil le contenu des pages*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(242, 242, 242);
+  padding : 50px;
+  margin-top: 50px;
+  
+}
+
+
+  footer ul{
+    margin-left:-40px;
+    
+  }
+    footer ul li{
+      margin : 2px 0 5px 0;
+
+    }
+
+  #footer__apropos{
+    width: 33%;
+
+  }
+
+
+  #footer__hebergement{
+    width: 33%;
+
+  }
+
+  #footer__assistance{
+    width: 33%;
+
+  }

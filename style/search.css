@@ -126,16 +126,21 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
+            margin: 0 0 50px 0;
         }
         
         
             .results--number span{
-                width: 30px;
-                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
                 color: rgb(0, 101, 252);
                 border: 1px solid rgb(230, 230, 230);
                 border-radius: 20px;
-
+                font-size: 0.9em;
+                margin-right: 10px;
             }
 
 
