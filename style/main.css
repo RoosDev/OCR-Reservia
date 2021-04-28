@@ -15,9 +15,13 @@ font-family: 'Raleway', verdana, sans-serif;
 
 /*  Définition des paramètres pour les écris   */
   p{
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: justify;
   }
+
+  .bold{
+    font-weight: bold;
+}
 
   a{
     font-size: 0.8em;
@@ -27,14 +31,13 @@ font-family: 'Raleway', verdana, sans-serif;
 
 
   h1{
-    font-size: 1.2em;
+    font-size: 1.4em;
 
 
   }
 
   h2{
-    font-size: 1.0em;
-
+    font-size: 1.1em;
 
   }
 
@@ -43,6 +46,8 @@ font-family: 'Raleway', verdana, sans-serif;
   ul{
     list-style-type: none ;
   }
+
+
 
   span > i[class*="fas"]{
     display: flex;
@@ -68,25 +73,26 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding : 0 50px 0 50px;
-  
+  margin: 0 5px 20px 60px;
+
 }
 
     /*  Mise en forme du logo */
     #header__logo{
-      width :15%;
+      width :20%;
       margin-top: 0px;
       padding: 0px;
     }
 
       #header__logo img{
-        width : 100px;
-        margin-top : 30px;
+        width : 105px;
+        margin-top : 40px;
       }
 
       /*      Mise en page du menu de navigation   */
     nav{
       margin-top :0px;
+      margin-right: 100px;
       
     }
 
@@ -106,7 +112,7 @@ header{
         
       }
 
-      nav ul li:hover, nav ul li:active,nav ul li:focus{
+      nav ul li:hover, nav ul li:target,nav ul li:focus{
         border-top: 3px solid rgb(0,101,252);
       }
 
@@ -115,7 +121,7 @@ header{
           font-size: 1.0em;
           
         }
-        nav ul li a:hover, nav ul li a:focus, nav ul li:active{
+        nav ul li a:hover, nav ul li a:focus, nav ul li:target{
           color: rgb(0,101,252);         
         }
 
@@ -128,13 +134,14 @@ header{
   /*  Mise en page du container qui accueil le contenu des pages*/
 
   #container{
-    margin: 0px;
     padding: 0px;
+    margin : 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding : 0 50px 0 50px;
+    margin-left:60px;
+    margin-right: 35px;
 
   }
 
@@ -164,17 +171,17 @@ footer{
     }
 
   #footer__apropos{
-    width: 33%;
+    width: 30%;
 
   }
 
 
   #footer__hebergement{
-    width: 33%;
+    width: 30%;
 
   }
 
   #footer__assistance{
-    width: 33%;
+    width: 30%;
 
   }
