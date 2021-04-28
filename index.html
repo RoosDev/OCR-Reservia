@@ -60,11 +60,17 @@
                 <!--   Le champ de recherche   -->
 
                 <div class="search__box">
-                    <span>
-                        <i class="fas fa-map-marker-alt"></i>
-                    </span>
-                    <input type="text" value="Marseille, France"/>
-                    <input type="submit" value="Rechercher" /> 
+
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+
+                    <form action="index.html" method="POST" autocomplete="on" >
+
+                        <input type="text" value="Marseille, France" placeholder="Perth, Australie"/>
+                        <input type="submit" value="Rechercher" /> 
+
+                    </form>
                 </div>
 
                 <!--   Les boutons de filtrage des résultats   -->
@@ -72,27 +78,35 @@
                 <div class="search__filters">
                     <h2>Filtres</h2>
                     <ul class="filters--buttons">
-                        <li class="button--economique">
-                            <span>
-                                <i class="fas fa-money-bill-wave"></i>                            </span>
-                            <h2>&Eacute;conomique</h2>
-                        </li>
-                        <li class="button--famillial">
-                            <span>
-                                <i class="fas fa-child"></i>                            </span>
-                            <h2>Famillial</h2>
-                        </li>
-                        <li class="button--romantique">
-                            <span>
-                                <i class="fas fa-heart"></i>                            </span>
-                            <h2>Romantique</h2>
-                        </li>
-                        <li class="button--animaux">
-                            <span>
-                                <i class="fas fa-dog"></i>                            </span>
-                            <h2>Animaux autorisés</h2>
-                        </li>
-                    </ul>
+                        <a href="?filter=eco">
+                            <li class="button--economique">
+                                <span>
+                                    <i class="fas fa-money-bill-wave"></i>                            </span>
+                                <h2>&Eacute;conomique</h2>
+                            </li>
+                        </a>
+                        <a href="?filter=family">
+                            <li class="button--famillial">
+                                <span>
+                                    <i class="fas fa-child"></i>                            </span>
+                                <h2>Famillial</h2>
+                            </li>
+                        </a>
+                        <a href="?filter=biglove">
+                            <li class="button--romantique">
+                                <span>
+                                    <i class="fas fa-heart"></i>                            </span>
+                                <h2>Romantique</h2>
+                            </li>
+                        </a>
+                        <a href="?filter=animal">
+                            <li class="button--animaux">
+                                <span>
+                                    <i class="fas fa-dog"></i>                            </span>
+                                <h2>Animaux autorisés</h2>
+                            </li>
+                        </a>
+                </ul>
                 </div>
                 
             </div>
