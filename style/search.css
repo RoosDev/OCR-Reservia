@@ -204,61 +204,32 @@
         flex-wrap: wrap;
     }
 
-    /* Les mise en forme communes  des box pour hébergement et activité  */
-    div[class*="Hebergements__"]{
+        /*********************************************************************/
+        /* Les mise en forme communes  des box pour hébergement et activité  */
+        /*********************************************************************/
+
+        div[class*="Hebergements__"]{
         background-color: rgb(242, 242, 242);
         color: rgb(0, 0, 0);
+        border-radius: 0px;
         border-radius: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding-left : 40px;
+        padding : 30px;
 
 
     }
     
     .Hebergements--header{
         width: 100%;
+        
     }
 
-        .Hebergements--header h2{
+        .Hebergements--header h1{
             width: 100%;
-            color: rgb(0, 0, 0);
-            font-size: 1.3em;
-            margin: 10px;
+            margin : 10px;
         }
-
-
-
-        /* Les mise en forme spécifique hébergement LISTE*/ 
-        .Hebergements__liste{
-            max-width: 60%;
-            min-width: 600px;
-            flex-direction: column;
-
-                       
-        }
-
-        .Hebergements--container{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-
-        .Hebergements--container > a{
-            display: inline-block;
-            padding: 10px;
-            background-color: yellow;
-        }
-            .Hebergements__liste .Hebergements--container > a{
-                width: 28%;
-            }
-
-
 
             /* Mise en forme des box hotel : le commun à toutes*/
 
@@ -266,30 +237,26 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                border-radius: 20px;
+                justify-content: center;
+                align-items: center;
             }
     
                 .boxhotel__detail{
-                    width: 100%;
+                    width: 95%;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: flex-start;
-                    padding-right: 15px;
-                    padding-left: 15px;
+                    margin : 10px;
                 }
                 
                     .boxhotel__detail h3{
-                        font-size: 0.9em;
-                        margin-top : 5px;
-                        margin-bottom: 5px;
+                        margin : 5px 10px 5px 10px; 
                     }
 
                     .boxhotel__detail p{
-                        margin-top : 0px;
-                        margin-bottom: 5px;
+                        margin: 0 10px 0 10px;
+                        font-size: 1.2em;
                     }
                    
 
@@ -299,12 +266,12 @@
                         flex-direction: row;
                         justify-content: flex-start;
                         align-items: center;
-                        margin-bottom: 10px;
+                        margin : 5px 10px 0 10px;
                     }
-                        .etoile{
-                            margin : 2px 2px 2px 2px;
 
-
+                        .etoile i[class*="fas"]{
+                            margin : 2px 0 2px 0;
+                            font-size: 1em;
                         }
 
                             .etbleue{
@@ -317,23 +284,62 @@
                                 color: rgb(217, 217, 217);
                             }
 
+        /*************************************************/
+        /* Les mise en forme spécifique hébergement LISTE*/
+        /*************************************************/
+
+        .Hebergements__liste{
+            width: 61%;
+            min-width: 400px;
+            flex-direction: column;
+
+                       
+        }
+
+        .Hebergements--container{
+            clear: both;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .Hebergements--container > a{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            margin : 10px 10px 20px 10px;
+            
+
+        }
+
+            .Hebergements__liste .Hebergements--container > a{
+                width: 30%;
+            }
+
+
+
+
             /* Mise en forme des box hotel : spécifique à la version haute*/
 
             .Hebergements__liste .boxhotel-haut{
+                width: 100%;
                 flex-direction: column;
                 justify-content: center;
-                background-color: rgb(255, 255, 255);
 
             }
                 .Hebergements__liste div[class*="boxhotel_haut__apercu"]{
-                    width: 96%;
-                    margin: 5px;
+                    width: 95%;
+                    margin: 5px 0 2px 0;
                     text-align: center;
-                    max-width: 275px;
-                    max-height: 150px;
+                    min-width: 50px;
+                    max-width: 270px;
+                    max-height: 170px;
                     min-height: 125px;
                     border-radius: 20px 20px 0 0;
-                    margin-bottom: 0px;
                     background-position: center;
                     background-size: 100%;
                     background-repeat: no-repeat;
@@ -364,18 +370,16 @@
             width: 100%;
             justify-content: start;
             margin-left : 20px;
-            margin-top: 30px;
-            margin-bottom : 30px
+            margin-top: 15px;
         }
 
-        .Hebergements--container .list_cut a{
-            font-weight: bold;
 
-        }
+        /************************************************/
         /* Les mise en forme spécifique hébergement TOP */ 
+        /************************************************/
 
         .Hebergements__toppopulaire{
-            width: 26%;
+            width: 28%;
             height: 100%; 
             min-width: 100px;
             flex-direction: column;
@@ -391,26 +395,25 @@
         }
     
 
-                    /* Mise en forme des box hotel : spécifique à la version haute*/
+             /* Mise en forme des box hotel : spécifique à la version haute*/
    
 
     
    
     .Hebergements__toppopulaire .Hebergements--container > a{
-        width: 100%;
+        width: 95%;
+
     }
 
         .Hebergements__toppopulaire .boxhotel-long{
             width: 100%;
             flex-direction: row;
-            background-color: rgb(255, 255, 255);
-            border-radius: 10px;
         }
 
 
             .Hebergements__toppopulaire div[class*="boxhotel_long__apercu"]{
-                width: 125px;
-                height: 90px;
+                width: 250px;
+                height: 150px;
                 margin: 5px;
                 text-align: center;
                 border-radius: 10px 0 0 10px;
@@ -430,9 +433,13 @@
                     background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
                     }
 
+        .Hebergements__toppopulaire .boxhotel__detail h3{
+            Margin-top : -10px;
+
+        }            
 
         .Hebergements__toppopulaire .noteetoile{
-            Margin-top : 30px;
+            Margin-top : 40px;
 
         }
 

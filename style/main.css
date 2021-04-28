@@ -37,7 +37,12 @@ font-family: 'Raleway', verdana, sans-serif;
   }
 
   h2{
-    font-size: 1.1em;
+    font-size: 1.2em;
+
+  }
+
+  h3{
+    font-size: 1.2em;
 
   }
 
@@ -92,7 +97,7 @@ header{
       /*      Mise en page du menu de navigation   */
     nav{
       margin-top :0px;
-      margin-right: 100px;
+      margin-right: 50px;
       
     }
 
