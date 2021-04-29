@@ -41,12 +41,6 @@ font-family: 'Raleway', verdana, sans-serif;
 
   }
 
-  h3{
-    font-size: 1.0em;
-
-  }
-
-
 
   ul{
     list-style-type: none ;
@@ -138,15 +132,15 @@ header{
 
   /*  Mise en page du container qui accueil le contenu des pages*/
 
-  #container{
+  main{
     padding: 0px;
     margin : 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left:55px;
-    margin-right: 35px;
+    margin-left: 55px;
+    margin-right: 55px;
 
   }
 

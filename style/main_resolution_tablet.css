@@ -1,0 +1,162 @@
+/* Changement des tailles de police*/
+
+p{
+    font-size: 0.8em;
+    text-align: justify;
+  }
+
+  .bold{
+    font-weight: bold;
+}
+
+  a{
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+
+  h1{
+    font-size: 1.2em;
+    
+
+  }
+
+  h2{
+    font-size: 1.0em;
+
+  }
+
+
+/**********************************************************/
+/*       Adaptation de la mise en page de la structure    */
+/**********************************************************/
+
+header{
+    margin: 0 5px 20px 35px;
+  
+  }
+  
+nav{
+    margin-right: 30px;
+    
+  }
+
+main{
+    margin-left: 35px;
+    margin-right: 35px;
+    
+  }
+
+  footer{
+    margin-top: 30px;
+  }
+  
+
+/**********************************************************/
+/* Adaptation de la mise en page de la section hebergement*/
+/**********************************************************/
+
+#Hebergements{
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+}
+
+    #Hebergements div[class*="Hebergements__"]{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 0 40px 0 ;
+        padding : 0;
+        
+    }
+
+
+        .Hebergements--header h1{
+            margin : 20px 0 0 20px;
+        }
+
+
+        .Hebergements--container > a{
+            margin : 10px 20px 20px 20px;
+
+
+        }
+        .Hebergements--container > a:hover{
+            box-shadow: 5px 5px 7px rgba(0, 101, 252,0.5);
+            margin : 5px 25px 25px 15px;
+        }
+
+            .boxhotel__detail h2{
+                margin : 2px 3px 2px 3px; 
+            }
+
+            .boxhotel__detail p{
+                margin: 2px 3px 2px 3px;
+                font-size: 1em;
+            }
+
+    /*  Le TOP POPULAIRE des hébergements  */
+
+
+    #Hebergements .Hebergements__toppopulaire{
+        background-color: rgb(222,235,255);
+        transition: background-color 0.5s;
+    }
+
+    #Hebergements .Hebergements--container > a{
+        width: 28%;
+
+    }
+
+    .Hebergements__toppopulaire .boxhotel-long{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .Hebergements__toppopulaire div[class*="boxhotel_long__apercu"]{
+        width: 95%;
+        height: 150px;
+        margin: 5px;
+        }
+
+    /*  Les résultats des hébergements  */
+
+    .Hebergements__liste div[class*="boxhotel_haut__apercu"]{
+        width: 95%;
+        height: 150px;
+        margin: 5px;
+        }
+
+            #Hebergements .noteetoile{
+                Margin-top : 10px;
+                margin-left : 3px;
+
+            }
+    .Hebergements--container .list_cut{
+        width: 100%;
+        justify-content: start;
+        margin : 3px 10px 20px 20px;
+    }
+    
+    
+/**********************************************************/
+/* Adaptation de la mise en page de la section activites  */
+/**********************************************************/
+
+#Activites{
+    margin-top: 0px;
+}
+
+#Activites__container{
+    margin-top : 30px;
+
+}
+
+
+
