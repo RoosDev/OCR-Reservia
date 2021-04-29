@@ -32,7 +32,7 @@ font-family: 'Raleway', verdana, sans-serif;
 
   h1{
     font-size: 1.4em;
-
+    
 
   }
 
@@ -42,7 +42,7 @@ font-family: 'Raleway', verdana, sans-serif;
   }
 
   h3{
-    font-size: 1.2em;
+    font-size: 1.0em;
 
   }
 
@@ -78,7 +78,7 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 5px 20px 60px;
+  margin: 0 5px 20px 55px;
 
 }
 
@@ -117,7 +117,7 @@ header{
         
       }
 
-      nav ul li:hover, nav ul li:target,nav ul li:focus{
+      nav ul li:hover, nav ul li:target,nav ul li:focus ,nav ul li:active{
         border-top: 3px solid rgb(0,101,252);
       }
 
@@ -126,7 +126,7 @@ header{
           font-size: 1.0em;
           
         }
-        nav ul li a:hover, nav ul li a:focus, nav ul li:target{
+        nav ul li a:hover, nav ul li a:focus, nav ul li:target, nav ul li:active{
           color: rgb(0,101,252);         
         }
 
@@ -145,7 +145,7 @@ header{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left:60px;
+    margin-left:55px;
     margin-right: 35px;
 
   }
@@ -155,38 +155,35 @@ header{
     /*  Mise en page du container qui accueil le contenu des pages*/
 
 footer{
+  background-color: rgb(242, 242, 242);
+  margin-top: 50px;
+}
+
+#footeralign{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: rgb(242, 242, 242);
-  padding : 50px;
-  margin-top: 50px;
-  
+  margin: 40px 60px 40px 60px;
 }
 
 
-  footer ul{
-    margin-left:-40px;
-    
+  footer a{
+    font-size: 1.0em;
+    transition: margin-left 0.5s;
   }
-    footer ul li{
-      margin : 2px 0 5px 0;
 
+  footer a:hover{
+    margin-left : 20px;
+    transition: margin-left 0.3s;
+  }
+
+  footer ul li{
+      margin : 10px 0 15px -40px;
     }
 
-  #footer__apropos{
-    width: 30%;
 
-  }
+    div[id*="footer__"]{
+      width: 33%;
 
-
-  #footer__hebergement{
-    width: 30%;
-
-  }
-
-  #footer__assistance{
-    width: 30%;
-
-  }
+    }
