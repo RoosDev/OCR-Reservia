@@ -95,7 +95,7 @@
     }
 
         .search__filters h2{
-            margin: 0 10px 0 5px; 
+            margin: 0 5px 0 5px; 
         }
 
 
@@ -106,7 +106,7 @@
             align-items: center;
         }
 
-        .search__filters ul li{
+        .search__filters ul li a{
             margin : 5px 20px 5px 5px;
             height: 50px;
             display: flex;
@@ -120,7 +120,7 @@
 
         }
 
-        .search__filters ul li:hover ,  .search__filters ul li:focus-within{
+        .search__filters ul li a:hover ,  .search__filters ul li a:focus-within{
             background-color: rgb(222, 235, 255);
             border-color: rgb(222, 235, 255);
             color: rgb(0, 101, 252);
@@ -143,7 +143,7 @@
                 font-size: 1.5em;
             }
 
-            li[class*="button--"] h1{
+            li[class*="button--"] h2{
                 margin-left : 15px;
                 margin-right : 20px; 
                 

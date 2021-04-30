@@ -139,8 +139,15 @@ footer{
         width: 95%;
         height: 150px;
         margin: 5px;
+        border-radius: 15px 15px 0 0;
+
         }
 
+        .Hebergements__toppopulaire .boxhotel_description--long{
+            margin : 0px;
+            min-height: 100px;
+
+        }
     /*  Les résultats des hébergements  */
 
     .Hebergements__liste div[class*="boxhotel_apercu--haut"]{
@@ -169,8 +176,8 @@ footer{
     margin-top: 0px;
 }
 
-#Activites__container{
-    margin-top : 30px;
-
-}
+    #Activites__container{
+        margin-top : 30px;
+        height: 350px;
+    }
 

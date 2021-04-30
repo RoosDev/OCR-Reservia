@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style/search.css" />
 		<link rel="stylesheet" media="(orientation: portrait)" href="style/main_resolution_tablet.css" />
 		<link rel="stylesheet" media="screen and (max-width: 1249px)" href="style/main_resolution_tablet.css" />
-		<link rel="stylesheet" media="hand(max-width: 900px)" href="style/main_resolution_mobile.css" />
+		<link rel="stylesheet" media="handheld and(max-width: 900px)" href="style/main_resolution_mobile.css" />
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/b384501697.js" crossorigin="anonymous"></script>
     </head>
@@ -21,7 +21,7 @@
         <header>
             <div id="header__logo">
                 <a href="index.html">
-                    <img src="images/logo/Reservia@3x.png" />
+                    <img src="images/logo/Reservia@3x.png" alt="Logo Reservia - Bienvenue chez vous" />
                 </a>
             </div>
             <nav>
@@ -81,37 +81,41 @@
                 <div class="search__filters">
                     <h2>Filtres</h2>
                     <ul class="filters--buttons">
-                        <a href="?filter=eco">
-                            <li class="button--economique">
+                        <li class="button--economique">
+                            <a href="?filter=eco">
                                 <span>
-                                    <i class="fas fa-money-bill-wave"></i>                            </span>
-                                <h1>&Eacute;conomique</h1>
-                            </li>
-                        </a>
-                        <a href="?filter=family">
-                            <li class="button--famillial">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </span>
+                                <h2>&Eacute;conomique</h2>
+                            </a>
+                        </li>
+                        <li class="button--famillial">
+                            <a href="?filter=family">
                                 <span>
-                                    <i class="fas fa-child"></i>                            </span>
-                                <h1>Famillial</h1>
-                            </li>
-                        </a>
-                        <a href="?filter=biglove">
-                            <li class="button--romantique">
+                                    <i class="fas fa-child"></i>
+                                </span>
+                                <h2>Famillial</h2>
+                            </a>
+                        </li>
+
+                        <li class="button--romantique">
+                            <a href="?filter=biglove">
                                 <span>
-                                    <i class="fas fa-heart"></i>                            </span>
-                                <h1>Romantique</h1>
-                            </li>
-                        </a>
-                        <a href="?filter=animal">
-                            <li class="button--animaux">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                                <h2>Romantique</h2>
+                            </a>
+                        </li>
+                        <li class="button--animaux">
+                            <a href="?filter=animal">
                                 <span>
-                                    <i class="fas fa-dog"></i>                            </span>
-                                <h1>Animaux autorisés</h1>
-                            </li>
-                        </a>
-                </ul>
+                                    <i class="fas fa-dog"></i>
+                                </span>
+                                <h2>Animaux autorisés</h2>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                
             </div>
 
             <!------------------------------------------------------------------->
@@ -367,9 +371,7 @@
                                     </div>  
                                 </div>
                             </a>
-                            <a>
-                                <a class="bloc--bvide">
-                                </a>
+                            <a class="bloc--bvide">
                             </a>
                             <a href="#" class="bloc--b40">
                                 <div class="bloc--b40 Activites__container__bloc--no3">
@@ -398,8 +400,8 @@
                                     </div>  
                                 </div>
                             </a>
-                                <a class="bloc--bvide">
-                                </a>
+                            <a class="bloc--bvide">
+                            </a>
                             <a href="#" class="bloc--b50">
                                 <div class="bloc--b50 Activites__container__bloc--no6">
                                     <div class="Activites--Titlebox">
