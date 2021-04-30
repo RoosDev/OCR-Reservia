@@ -18,14 +18,17 @@ p{
     text-decoration: none;
   }
 
-
   h1{
+    font-size: 1.4em;
+  }
+
+
+  h2{
     font-size: 1.3em;
-    
 
   }
 
-  h2{
+  h3{
     font-size: 1.1em;
 
   }
@@ -36,7 +39,7 @@ p{
 /**********************************************************/
 
 header{
-    margin: 0 5px 20px 35px;
+    margin: 0px 5px 20px 35px;
   
   }
   
@@ -74,14 +77,14 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin : 0 0 40px 0 ;
-        padding : 0;
+        margin : 0px 0px 40px 0px ;
+        padding : 0px;
         
     }
 
 
-        .Hebergements--header h1{
-            margin : 20px 0 0 20px;
+        .Hebergements--header h2{
+            margin : 20px 0px 0px 20px;
         }
 
 
@@ -103,10 +106,10 @@ footer{
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
-            margin : 0 0px 10px 0px;
+            margin : 0px 0px 10px 0px;
         }
 
-            .boxhotel__detail h2{
+            .boxhotel__detail h3{
                 margin : 2px 3px 2px 3px; 
             }
 
@@ -125,7 +128,7 @@ footer{
         transition: background-color 0.5s;
     }
 
-    #Hebergements .Hebergements--container > a{
+    .Hebergements__toppopulaire .Hebergements--container > a{
         width: 28%;
 
     }
@@ -139,7 +142,7 @@ footer{
         width: 95%;
         height: 150px;
         margin: 5px;
-        border-radius: 15px 15px 0 0;
+        border-radius: 15px 15px 0px 0px;
 
         }
 

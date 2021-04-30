@@ -1,0 +1,365 @@
+/***********************************/
+/* Changement des tailles de police*/
+/***********************************/
+
+
+p{
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  .bold{
+    font-weight: bold;
+}
+
+  a{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 1.4em;
+  }
+
+
+  h2{
+    font-size: 1.3em;
+
+  }
+
+  h3{
+    font-size: 1.1em;
+
+  }
+
+
+/**********************************************************/
+/*       Adaptation de la mise en page de la structure    */
+/**********************************************************/
+
+header{
+    margin: 0px;
+    padding : 0px;
+    flex-direction: column;
+
+  
+  }
+  
+    #header__logo{
+        display: none;
+    }
+
+        /********  Adaptation du menu de navigation ******/
+nav{
+    width: 100%;
+    margin : 20px 0px 0px 0px;
+    padding : 0px;
+    flex-wrap: wrap;
+
+  }
+
+    nav ul{
+        padding: 0px;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }  
+
+    nav ul li{
+        width: 50%;
+        padding-top: 0px;
+        border-top : 0px;
+        border-bottom : 3px solid rgb(242, 242, 242);   
+        align-items: center;
+        display: flex;
+    }
+    nav ul .navvide, nav ul .signin{
+        border-top: 0px;
+        border-bottom : 3px solid rgb(255, 255, 255);   
+    }
+
+        nav ul li a{
+            margin: 0px auto 20px auto;
+
+        }
+
+        nav ul .menu1{
+            order: 3;
+        }
+        nav ul .menu2{
+            order: 4;
+        }
+        nav ul .signin{
+            order: 2;
+            display: flex;
+        }
+
+            nav ul .signin a{
+                margin: 20px 20px 5px auto;
+
+            }
+
+        nav ul .navvide{
+            display: flex;
+            order : 1;
+        }
+            nav ul .navvide a{
+                margin: 0px auto 20px 20px;
+
+            }
+            .navvide img{
+                width : 105px;
+                margin : 0px;
+                padding:0px;
+            }
+        
+
+
+        nav ul li:hover, nav ul li:target,nav ul li:focus ,nav ul li:active{
+            border-top: 0px;
+            border-bottom: 3px solid rgb(0,101,252);
+          }
+          nav ul .navvide:hover, nav ul .navvide:target, nav ul .navvide:focus, nav ul .navvide:active, nav ul .signin:hover, nav ul .signin:target, nav ul .signin:focus, nav ul .signin:active{
+            border-top: 0px;
+            border-bottom : 3px solid rgb(255, 255, 255);   
+        }
+
+
+main{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+footer{
+    margin: 0px;
+  }
+
+#footeralign{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin : 30px;
+}
+
+    div[id*="footer__"]{
+        width:100%;
+    }
+
+        footer ul{
+            margin : 10px 0px 15px 0px;
+            padding: 0px;
+        }
+
+            footer ul li{
+                width: 100%;
+                margin : 10px 0px 15px  0px;
+            }
+
+
+/**********************************************************/
+/* Adaptation de la mise en page de la haute de recherche */
+/**********************************************************/
+
+    /* Section portant sur le champs de recherche */
+
+.search__box{
+    margin-top : 10px;
+    
+}
+    .search__box input[type="submit"]{
+        display: none;
+    }
+        .search__box button[class*="fas"]{
+            display: inline-block;
+            width: 55px;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+
+    /* Section portant sur les filtres de recherche */
+
+.search__filters{
+    width: 100%;
+}
+
+.search__filters h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    .search__filters ul{
+        padding :0px;
+    }
+
+
+
+    .search__filters ul li a[class*="button--"]{
+        margin : 5px ;
+        height: 50px;
+    }
+
+
+/**********************************************************/
+/* Adaptation de la mise en page de la section hebergement*/
+/**********************************************************/
+#Container__results #Hebergements{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+    #Hebergements div[class*="Hebergements__"] .Hebergements--header h2{
+            width: 90%;
+            margin : 0px 0px 15px 20px;
+        }
+
+        #Hebergements .Hebergements__liste{
+            background-color: transparent;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        #Hebergements .Hebergements--container{
+            padding:0px;
+            margin-bottom : 0px;
+        }
+
+
+            #Hebergements .Hebergements--container > a{
+                width: 100%;
+                padding:0px;
+                margin : 10px 20px 10px 20px;
+                display: flex;
+            }
+            
+            .Hebergements--container > a:hover{
+                box-shadow: 5px 5px 7px rgba(0, 101, 252,0.5);
+                margin : 5px 25px 25px 15px;
+            }
+
+
+        div[class*="boxhotel_description--"]{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin : 0px 0px 10px 0px;
+        }
+
+            .boxhotel__detail h3{
+                margin : 2px 3px 2px 3px; 
+            }
+
+            .boxhotel__detail p{
+                margin: 2px 3px 2px 3px;
+                font-size: 1em;
+            }
+
+            .Hebergements--container .list_cut{
+                width: 100%;
+                justify-content: start;
+                margin : 3px 10px 0px 20px;
+            }
+            
+            
+        
+
+    /*  Le TOP POPULAIRE des hébergements  */
+
+
+    #Hebergements .Hebergements__toppopulaire{
+        width: 100%;
+        background-color: rgb(242, 242, 242);
+        border-radius: 0px;
+        transition: background-color 0.5s;
+    }
+    #Hebergements .Hebergements__toppopulaire .Hebergements--container{
+        margin-bottom: 30px;
+    }
+
+
+    .Hebergements__toppopulaire .boxhotel-long{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .Hebergements__toppopulaire div[class*="boxhotel_apercu--long"]{
+        width: 250px;
+        height: 150px;
+        margin-right: 20px;
+        border-radius: 15px 0px 0px 15px;
+
+        }
+
+        .Hebergements__toppopulaire .boxhotel_description--long{
+            margin : 0px;
+            min-height: 100px;
+
+        }
+    /*  Les résultats des hébergements  */
+
+    .Hebergements__liste div[class*="boxhotel_apercu--haut"]{
+        width: 95%;
+        height: 150px;
+        margin: 5px;
+        }
+
+            #Hebergements .noteetoile{
+                Margin-top : 10px;
+                margin-left : 3px;
+
+            }
+    
+/**********************************************************/
+/* Adaptation de la mise en page de la section activites  */
+/**********************************************************/
+
+#Activites{
+    width: 90%;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+    #Activites #Activites__container{
+        width: 100%;
+        margin-top : 30px;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+
+    #Activites .Activites__container__bloc{
+        width: 100%;
+        height: auto ;
+    
+    }
+
+        #Activites a[href="#"]{
+            margin-bottom: 30px;
+
+        }
+
+        #Activites a[href="#"]:hover{
+            margin : -5px 5px 35px -5px;
+        }
+
+
+
+            #Activites div[class*="bloc--b"]{
+            width: 100%;    
+            height: 200px;
+
+            }
+
+
+                #Activites .bloc--bvide{
+                    height: 0px;
+                }
