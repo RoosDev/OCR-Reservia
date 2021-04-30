@@ -231,7 +231,33 @@
             margin : 10px;
         }
 
+    .Hebergements--container{
+        clear: both;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+
             /* Mise en forme des box hotel : le commun à toutes*/
+
+        .Hebergements--container > a{
+            width: 30%;
+            margin : 15px 10px 15px 10px;
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+
+        }
+
+        .Hebergements--container > a:hover{
+            margin : 10px 15px 20px 5px;
+            box-shadow: 5px 5px 7px rgba(0, 101, 252,0.5);
+        }
 
             article[class*="boxhotel-"]{
                 width: 100%;
@@ -240,50 +266,62 @@
                 justify-content: center;
                 align-items: center;
             }
-    
-                .boxhotel__detail{
-                    width: 95%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    margin : 10px;
-                }
-                
+
+            div[class*="boxhotel_apercu--"]{
+                position: relative;
+                width: 97%;
+                margin: 5px;
+                text-align: center;
+                max-height: 170px;
+                min-height: 125px;
+                border-radius: 20px 20px 0 0;
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            div[class*="boxhotel_description--"]{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin : 0 10px 10px 40px;
+            }
+
+                    .boxhotel__detail{
+                        width: 95%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                    
                     .boxhotel__detail h2{
-                        margin : 5px 10px 5px 10px; 
+                        margin-top : 2px ;
+                        margin-bottom: 7px; 
                     }
 
                     .boxhotel__detail p{
-                        margin: 0 10px 0 10px;
-                        font-size: 1.2em;
-                    }
-                   
+                            margin: 0 ;
+                            font-size: 1.2em;
+                        }
+                    
 
-
+                        
                     .noteetoile{
-                        display: flex;
-                        flex-direction: row;
-                            justify-content: flex-start;
-                        align-items: center;
-                        margin : 5px 10px 0 10px;
+                        margin : 10px 10px 10px 0px;
+                        font-size: 1em;
                     }
 
-                        .etoile i[class*="fas"]{
-                            margin : 2px 0 2px 0;
-                            font-size: 1em;
+                        .etbleue{
+                            color: rgb(0, 101, 252);
                         }
 
-                            .etbleue{
-                                color: rgb(0, 101, 252);
-
-
-                            }
-
-                            .etgrise{
-                                color: rgb(217, 217, 217);
-                                
-                            }
+                        .etgrise{
+                            color: rgb(217, 217, 217);
+                        }
 
         /*************************************************/
         /* Les mise en forme spécifique hébergement LISTE*/
@@ -293,42 +331,7 @@
             width: 61%;
             min-width: 400px;
             flex-direction: column;
-
-                       
         }
-
-        .Hebergements--container{
-            clear: both;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-
-        .Hebergements--container > a{
-            display: inline-block;
-            background-color: rgb(255, 255, 255);
-            border-radius: 20px;
-            margin : 15px 10px 15px 10px;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-
-
-        }
-
-        .Hebergements--container > a:hover{
-            box-shadow: 5px 5px 7px rgba(0, 101, 252,0.5);
-            margin : 10px 15px 20px 5px;
-        }
-
-            .Hebergements__liste .Hebergements--container > a{
-                width: 30%;
-            }
-
-
-
 
             /* Mise en forme des box hotel : spécifique à la version haute*/
 
@@ -336,40 +339,26 @@
                 width: 100%;
                 flex-direction: column;
                 justify-content: center;
-
             }
-                .Hebergements__liste div[class*="boxhotel_haut__apercu"]{
-                    position: relative;
-                    width: 97%;
-                    margin: 5px;
-                    text-align: center;
-                    max-height: 170px;
-                    min-height: 125px;
-                    border-radius: 20px 20px 0 0;
-                    background-position: center;
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    }
 
-                    .boxhotel_haut__apercu--no1{
-                        background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-                        
+                .boxhotel_apercu--haut--no1{
+                    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+                }
+                .boxhotel_apercu--haut--no2{
+                    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
                     }
-                    .boxhotel_haut__apercu--no2{
-                        background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-                        }
-                    .boxhotel_haut__apercu--no3{
-                        background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-                        }
-                    .boxhotel_haut__apercu--no4{
-                        background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-                        }
-                    .boxhotel_haut__apercu--no5{
-                        background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-                        }
-                    .boxhotel_haut__apercu--no6{
-                        background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-                        }
+                .boxhotel_apercu--haut--no3{
+                    background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+                    }
+                .boxhotel_apercu--haut--no4{
+                    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+                    }
+                .boxhotel_apercu--haut--no5{
+                    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+                    }
+                .boxhotel_apercu--haut--no6{
+                    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+                    }
 
 
         .Hebergements--container .list_cut{
@@ -389,25 +378,18 @@
             min-width: 100px;
             flex-direction: column;
             justify-content: center;
-
-
         }
 
-        .Hebergements__toppopulaire .fa-chart-line{
-            float: right;
-            margin : 15px;
-            font-size: 1.6em;
-        }
-    
+            .Hebergements__toppopulaire .fa-chart-line{
+                float: right;
+                margin : 15px;
+                font-size: 1.6em;
+            }
 
              /* Mise en forme des box hotel : spécifique à la version haute*/
    
-
-    
-   
     .Hebergements__toppopulaire .Hebergements--container > a{
         width: 95%;
-
     }
 
         .Hebergements__toppopulaire .boxhotel-long{
@@ -415,38 +397,32 @@
             flex-direction: row;
         }
 
+        .Hebergements__toppopulaire div[class*="boxhotel_apercu--long"]{
+            width: 250px;
+            min-height: 150px;
+            border-radius: 15px 0 0 15px;
+            background-size: cover;
+            
+            }
 
-            .Hebergements__toppopulaire div[class*="boxhotel_long__apercu"]{
-                width: 250px;
-                height: 150px;
-                margin: 5px;
-                text-align: center;
-                border-radius: 15px 0 0 15px;
-                background-position: center;
-                background-size: 200%;
-                background-repeat: no-repeat;
+
+            .boxhotel_apercu--long--no1{
+                background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg")
+                
+               }
+            .boxhotel_apercu--long--no2{
+                background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg")
+                }
+            .boxhotel_apercu--long--no3{
+                background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
                 }
 
-                .boxhotel_long__apercu--no1{
-                    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg")
-                    
-                }
-                .boxhotel_long__apercu--no2{
-                    background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg")
-                    }
-                .boxhotel_long__apercu--no3{
-                    background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-                    }
-
-        .Hebergements__toppopulaire .boxhotel__detail h2{
-            Margin-top : -10px;
-
-        }            
-
-        .Hebergements__toppopulaire .noteetoile{
-            Margin-top : 40px;
-
+        .Hebergements__toppopulaire .boxhotel_description--long{
+            margin : 0 0 0 20px;
+            min-height: 140px;
         }
+
+
 
 /*************************************************************/
 /*************************************************************/
