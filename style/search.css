@@ -129,7 +129,7 @@
 
             a[class*="button--"]:hover , a[class*="button--"]:focus-within{
                 background-color: rgb(222, 235, 255);
-                border-color: 0px;
+                border: 0px;
                 color: rgb(0, 101, 252);
                 transition: all 0.8s;
                 }
