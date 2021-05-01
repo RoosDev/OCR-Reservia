@@ -1,0 +1,125 @@
+/***********************************/
+/* Changement des tailles de police*/
+/***********************************/
+
+
+body p{
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  body  a{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+  body h1{
+    font-size: 1.4em;
+  }
+
+
+  body h2{
+    font-size: 1.3em;
+
+  }
+
+  body h3{
+    font-size: 1.1em;
+
+  }
+
+/**********************************************************/
+/* Adaptation de la mise en page de la section hebergement*/
+/**********************************************************/
+
+   #Hebergements .Hebergements__toppopulaire .Hebergements--header h2{
+            width: 90%;
+            margin : 20px 0px 15px 20px;
+        }
+
+
+        #Hebergements .Hebergements__liste .Hebergements--container > a{
+            width: 45%;
+            margin : 10px 5px 10px 5px;
+
+
+        }
+        #Hebergements .Hebergements__liste .Hebergements--container > a:hover{
+            margin : 5px 10px 15px 0px;
+        }
+
+
+
+        
+            #Hebergements .Hebergements__toppopulaire .Hebergements--container > a{
+                width: 100%;
+                padding:0px;
+                margin : 10px 20px 10px 20px;
+                display: flex;
+            }
+            
+            .Hebergements__toppopulaire .Hebergements--container > a:hover{
+                box-shadow: 5px 5px 7px rgba(0, 101, 252,0.5);
+                margin : 5px 25px 25px 15px;
+            }
+
+    #Hebergements .Hebergements__toppopulaire .Hebergements--container{
+        margin-bottom: 30px;
+    }
+
+
+    .Hebergements__toppopulaire .boxhotel-long{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .Hebergements__toppopulaire div[class*="boxhotel_apercu--long"]{
+        width: 250px;
+        height: 150px;
+        margin-right: 20px;
+        border-radius: 15px 0px 0px 15px;
+
+        }
+
+        .Hebergements__toppopulaire .boxhotel_description--long{
+            margin : 0px;
+            min-height: 100px;
+
+        }
+
+
+    /*  Les résultats des hébergements  */
+
+    .Hebergements__liste div[class*="boxhotel_apercu--haut"]{
+        width: 95%;
+        height: 150px;
+        margin: 5px;
+        }
+
+            #Hebergements .noteetoile{
+                Margin-top : 10px;
+                margin-left : 3px;
+
+            }
+    
+
+              /* Mise en forme des box hotel : le commun à toutes*/
+
+
+                .Hebergements--container > a{
+                    width: 45%;
+                    margin : 10px 5px 10px 5px;
+    
+    
+                }
+                .Hebergements--container > a:hover{
+                    margin : 5px 10px 15px 0px;
+                }
+        
+    /** Modification de la partie activité **/
+
+    div[class*="bloc--b"] .Activites--Titlebox h3{
+        font-size: 0.9em;
+
+        }

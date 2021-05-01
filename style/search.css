@@ -487,7 +487,7 @@
             
     }
 
-            .bloc--b100{
+            a[class*="bloc--b100"], div[class*="bloc--b100"]{
                 height: 100%;
             }
 
@@ -495,7 +495,7 @@
                 height: 55%;
             }
 
-            .bloc--b50{
+            a[class*="bloc--b50"], div[class*="bloc--b50"]{
                 height: 44%;
             }
 

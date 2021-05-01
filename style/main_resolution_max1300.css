@@ -1,0 +1,58 @@
+/***********************************/
+/* Changement des tailles de police*/
+/***********************************/
+
+
+p{
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  a{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 1.4em;
+  }
+
+
+  h2{
+    font-size: 1.3em;
+
+  }
+
+  h3{
+    font-size: 1.1em;
+
+  }
+
+
+  /* Mise en forme des box hotel : le commun à toutes*/
+
+
+#Hebergements{
+justify-content: space-around;
+}
+
+    div[class*="Hebergements__"]{
+    padding:10px;
+    }
+
+        .Hebergements__liste{
+            margin-right: 20px;
+            width: 65%;
+        }
+
+            .Hebergements--container > a{
+                width: 45%;
+                margin : 10px 5px 10px 5px;
+
+
+            }
+            .Hebergements--container > a:hover{
+                margin : 5px 10px 15px 0px;
+            }
+    
