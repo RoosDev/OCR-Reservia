@@ -252,7 +252,7 @@
             /* Mise en forme des box hotel : le commun à toutes*/
 
         .Hebergements--container > a{
-            width: 30%;
+            width: 28%;
             margin : 15px 10px 15px 10px;
             display: inline-block;
             background-color: rgb(255, 255, 255);
