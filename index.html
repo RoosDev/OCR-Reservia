@@ -1,462 +1,457 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
-    <head>
-        <!-- En-tête de la page -->
-        <meta charset="utf-8" />
-		<link rel="stylesheet" href="style/main.css" />
-		<link rel="stylesheet" href="style/search.css" />
-		<link rel="stylesheet" media="only screen and (max-width: 1300px)" href="style/main_resolution_max1200.css" />
-		<link rel="stylesheet" media="only screen and (max-width: 1150px), (orientation: portrait)" href="style/main_resolution_tablet.css" />
-		<link rel="stylesheet" media="only screen and (max-width: 800px)" href="style/main_resolution_max800.css" />
-		<link rel="stylesheet" media="only screen and (max-width: 600px)" href="style/main_resolution_mobile.css" />
-        <title>Reservia</title>
-        <script src="https://kit.fontawesome.com/b384501697.js" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <!-- En-tête de la page -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/search.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 1300px)"
+      href="style/main_resolution_max1300.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 1150px), (orientation: portrait)"
+      href="style/main_resolution_tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 800px)"
+      href="style/main_resolution_max800.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 600px)"
+      href="style/main_resolution_mobile.css"
+    />
+    <title>Reservia</title>
+    <script
+      src="https://kit.fontawesome.com/b384501697.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    <body>
+  <body>
+    <!--*****************************************************************************************-->
+    <!--   On commence avec le Header plutôt light qui intègre le logo et le menu de navigation  -->
+    <!--*****************************************************************************************-->
 
-<!--*****************************************************************************************-->
-<!--   On commence avec le Header plutôt light qui intègre le logo et le menu de navigation  -->
-<!--*****************************************************************************************-->
+    <header>
+      <div id="header__logo">
+        <a href="index.html">
+          <img
+            src="images/logo/Reservia@3x.png"
+            alt="Logo Reservia - Bienvenue chez vous"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li class="menu1">
+            <a href="#Hebergements">Hébergements</a>
+          </li>
+          <li class="menu2">
+            <a href="#Activites">Activités</a>
+          </li>
+          <li class="signin">
+            <a href="#">S'inscrire</a>
+          </li>
+          <li class="navvide">
+            <a href="index.html">
+              <img
+                src="images/logo/Reservia@3x.png"
+                alt="Logo Reservia - Bienvenue chez vous"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <header>
-            <div id="header__logo">
-                <a href="index.html">
-                    <img src="images/logo/Reservia@3x.png" alt="Logo Reservia - Bienvenue chez vous" />
-                </a>
+    <!--*****************************************************************************************-->
+    <!--                         ici le contenu principal de la page                             -->
+    <!--*****************************************************************************************-->
+
+    <main>
+      <!--***************************************************************-->
+      <!--    Le premier bloc supérieur avec les éléments de recherche   -->
+      <!--***************************************************************-->
+
+      <!--   présentation de la recherche   -->
+
+      <div id="Container__search">
+        <div class="search__text">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <!--   Le champ de recherche   -->
+
+        <div class="search__box">
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+
+          <form action="index.html" method="POST" autocomplete="on">
+            <input
+              type="text"
+              value="Marseille, France"
+              placeholder="Perth, Australie"
+            />
+            <input type="submit" value="Rechercher" />
+            <button class="fas fa-search"></button>
+          </form>
+        </div>
+
+        <!--   Les boutons de filtrage des résultats   -->
+
+        <div class="search__filters">
+          <h3>Filtres</h3>
+          <ul class="filters--buttons">
+            <li>
+              <a href="?filter=eco" class="button--economique">
+                <span>
+                  <i class="fas fa-money-bill-wave"></i>
+                </span>
+                <h3>&Eacute;conomique</h3>
+              </a>
+            </li>
+            <li>
+              <a href="?filter=family" class="button--famillial">
+                <span>
+                  <i class="fas fa-child"></i>
+                </span>
+                <h3>Famillial</h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="?filter=biglove" class="button--romantique">
+                <span>
+                  <i class="fas fa-heart"></i>
+                </span>
+                <h3>Romantique</h3>
+              </a>
+            </li>
+            <li>
+              <a href="?filter=animal" class="button--animaux">
+                <span>
+                  <i class="fas fa-dog"></i>
+                </span>
+                <h3>Animaux autorisés</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--***************************************************************-->
+      <!--      Le second bloc  avec les résultats de la recherche       -->
+      <!--***************************************************************-->
+
+      <!--  Le nombre de résultats    -->
+
+      <div id="Container__results">
+        <div class="results--number">
+          <span>
+            <i class="fas fa-info"></i>
+          </span>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
+        <!--  La liste des résultats portants sur les hébergements   -->
+
+        <section id="Hebergements">
+          <div class="Hebergements__liste">
+            <div class="Hebergements--header">
+              <h2>Hébergements à Marseille</h2>
             </div>
-            <nav>
-                <ul>
-                    <li class="menu1">
-                        <a href="#Hebergements">Hébergements</a> 
-                    </li>
-                    <li class="menu2">
-                        <a href="#Activites">Activités</a> 
-                    </li>
-                    <li class="signin">
-                        <a href="#">S'inscrire</a> 
-                    </li>
-                    <li class="navvide">
-                        <a href="index.html">
-                            <img src="images/logo/Reservia@3x.png" alt="Logo Reservia - Bienvenue chez vous" />
-                        </a>
-       
-                    </li>
-
-                </ul>
-
-            </nav>
-        </header>
-
-<!--*****************************************************************************************-->
-<!--                         ici le contenu principal de la page                             -->
-<!--*****************************************************************************************-->
-
-        <main>
-        
-            <!--***************************************************************-->
-            <!--    Le premier bloc supérieur avec les éléments de recherche   -->
-            <!--***************************************************************-->
-
-
-                <!--   présentation de la recherche   -->
-
-            <div id="Container__search">
-
-                <div class="search__text">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
-
-                <!--   Le champ de recherche   -->
-
-                <div class="search__box">
-
-                        <span>
-                            <i class="fas fa-map-marker-alt"></i>
-                        </span>
-
-                    <form action="index.html" method="POST" autocomplete="on" >
-
-                        <input type="text" value="Marseille, France" placeholder="Perth, Australie"/>
-                        <input type="submit" value="Rechercher" /> 
-                        <button class="fas fa-search" > </button>
-
-                    </form>
-                </div>
-
-                <!--   Les boutons de filtrage des résultats   -->
-
-                <div class="search__filters">
-                    <h3>Filtres</h3>
-                    <ul class="filters--buttons">
-                        <li>
-                            <a href="?filter=eco" class="button--economique">
-                                <span>
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </span>
-                                <h3>&Eacute;conomique</h3>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="?filter=family" class="button--famillial">
-                                <span>
-                                    <i class="fas fa-child"></i>
-                                </span>
-                                <h3>Famillial</h3>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="?filter=biglove" class="button--romantique">
-                                <span>
-                                    <i class="fas fa-heart"></i>
-                                </span>
-                                <h3>Romantique</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="?filter=animal" class="button--animaux">
-                                <span>
-                                    <i class="fas fa-dog"></i>
-                                </span>
-                                <h3>Animaux autorisés</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!--***************************************************************-->
-            <!--      Le second bloc  avec les résultats de la recherche       -->
-            <!--***************************************************************-->
-
-
-<!--  Le nombre de résultats    -->
-
-            <div id="Container__results">
-                <div class="results--number">
-                    <span>
-                        <i class="fas fa-info"></i>
-                    </span>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-
-<!--  La liste des résultats portants sur les hébergements   -->
-
-                <section id="Hebergements">
-                    <div class="Hebergements__liste">
-                        <div class="Hebergements--header">
-                            <h2>Hébergements à Marseille</h2>
-                        </div>
-                        <div class="Hebergements--container">
-
-        <!--****** BOX N°1 de l'hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-haut">
-                                    <div class="boxhotel_apercu--haut--no1">
-                                    </div>
-                                    <div class="boxhotel_description--haut">
-                                        <div class="boxhotel__detail">
-                                            <h3>Auberge la Cannebière</h3>
-                                            <p>Nuit à partir de <span class="bold">25€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°2 de l'hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-haut">
-                                    <div class="boxhotel_apercu--haut--no2">
-                                    </div>
-                                    <div class="boxhotel_description--haut">
-                                        <div class="boxhotel__detail">
-                                            <h3>Hôtel du port</h3>
-                                            <p>Nuit à partir de <span class="bold">52€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°3 de l'hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-haut">
-                                    <div class="boxhotel_apercu--haut--no3">
-                                    </div>
-                                    <div class="boxhotel_description--haut">
-                                        <div class="boxhotel__detail">
-                                            <h3>Hôtel Les mouettes</h3>
-                                            <p>Nuit à partir de <span class="bold">76€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°4 de l'hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-haut">
-                                    <div class="boxhotel_apercu--haut--no4">
-                                    </div>
-                                    <div class="boxhotel_description--haut">
-                                        <div class="boxhotel__detail">
-                                            <h3>Hôtel de la mer</h3>
-                                            <p>Nuit à partir de <span class="bold">46€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°5 de l'hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-haut">
-                                    <div class="boxhotel_apercu--haut--no5">
-                                    </div>
-                                    <div class="boxhotel_description--haut">
-                                        <div class="boxhotel__detail">
-                                            <h3>Auberge Le Panier</h3>
-                                            <p>Nuit à partir de <span class="bold">23€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°6 de l'hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-haut">
-                                    <div class="boxhotel_apercu--haut--no6">
-                                    </div>
-                                    <div class="boxhotel_description--haut">
-                                        <div class="boxhotel__detail">
-                                            <h3>Hôtel chez Amina</h3>
-                                            <p>Nuit à partir de <span class="bold">96€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-
-                            <div class="list_cut">
-                                <a href=""><h2>Afficher plus</h2></a>
-                            </div>
-
-                        </div>
-
+            <div class="Hebergements--container">
+              <!--****** BOX N°1 de l'hébergement ******-->
+              <a href="">
+                <article class="boxhotel-haut">
+                  <div class="boxhotel_apercu--haut--no1"></div>
+                  <div class="boxhotel_description--haut">
+                    <div class="boxhotel__detail">
+                      <h3>Auberge la Cannebière</h3>
+                      <p>Nuit à partir de <span class="bold">25€</span></p>
                     </div>
-
-        <!--****** Le top des hébergements les plus populaires ******-->
-                    
-                    <div class="Hebergements__toppopulaire">
-                        <div class="Hebergements--header">
-                            <i class="fas fa-chart-line"></i>
-                            <h2>Les plus populaires</h2>
-                        </div>
-                        <div class="Hebergements--container">
-        <!--****** BOX N°1 du top hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-long">
-                                    <div class="boxhotel_apercu--long--no1">
-                                    </div>
-                                    <div class="boxhotel_description--long">
-                                        <div class="boxhotel__detail">
-                                            <h3>Hôtel Le soleil du matin</h3>
-                                            <p>Nuit à partir de <span class="bold">128€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°2 du top hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-long">
-                                    <div class="boxhotel_apercu--long--no2">
-                                    </div>
-                                    <div class="boxhotel_description--long">
-                                        <div class="boxhotel__detail">
-                                            <h3>Au c&oelig;ur de l'eau Chambres d'hôtes</h3>
-                                            <p>Nuit à partir de <span class="bold">71€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-        <!--****** BOX N°3 du top hébergement ******-->
-                            <a href="">
-                                <article class="boxhotel-long">
-                                    <div class="boxhotel_apercu--long--no3">
-                                    </div>
-                                    <div class="boxhotel_description--long">
-                                        <div class="boxhotel__detail">
-                                            <h3>Hôtel Tout bleu et Blanc</h3>
-                                            <p>Nuit à partir de <span class="bold">68€</span></p>
-                                        </div>
-                                        <div class="noteetoile">
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etbleue"></i>
-                                            <i class="fas fa-star etgrise"></i>
-                                        </div>
-                                    </div>
-                                </article>
-                            </a>
-
-                        </div>
-
-
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etgrise"></i>
                     </div>
-                </section>
-
-
-<!--  La liste des résultats portants sur les activités   -->
-
-                <section id="Activites">
-                    <h2>Activités à Marseille</h2>
-                    <div id="Activites__container">
-                        
-                        <div class="Activites__container__bloc">
-                            <a href="#" class="bloc--b100">
-                                <div class="bloc--b100 Activites__container__bloc--no1">
-                                    <div class="Activites--Titlebox">
-                                        <h3>Vieux Port</h3>
-                                    </div>  
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="Activites__container__bloc">
-                            <a href="#" class="bloc--b60">
-                                <div class="bloc--b60 Activites__container__bloc--no2">
-                                    <div class="Activites--Titlebox">
-                                        <h3>Fort de Pomègues</h3>
-                                    </div>  
-                                </div>
-                            </a>
-                            <a class="bloc--bvide">
-                            </a>
-                            <a href="#" class="bloc--b40">
-                                <div class="bloc--b40 Activites__container__bloc--no3">
-                                    <div class="Activites--Titlebox">
-                                        <h3>Îles du Frioul</h3>
-                                    </div>  
-                                </div>
-                            </a>
-                        </div>
- 
-                         <div class="Activites__container__bloc ">
-                            <a href="#" class="bloc--b100">
-                                <div class="bloc--b100 Activites__container__bloc--no4">
-                                    <div class="Activites--Titlebox">
-                                        <h3>Parc National des Calanques</h3>
-                                    </div>  
-                                </div>
-                            </a>
-                        </div>
- 
-                        <div class="Activites__container__bloc">
-                            <a href="#" class="bloc--b50">
-                                <div class="bloc--b50 Activites__container__bloc--no5">
-                                    <div class="Activites--Titlebox">
-                                        <h3>Notre-Dame-de-la-Garde</h3>
-                                    </div>  
-                                </div>
-                            </a>
-                            <a class="bloc--bvide">
-                            </a>
-                            <a href="#" class="bloc--b50">
-                                <div class="bloc--b50 Activites__container__bloc--no6">
-                                    <div class="Activites--Titlebox">
-                                        <h3>Parc Longchamp</h3>
-                                    </div>  
-                                </div>
-                            </a>
-                        </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°2 de l'hébergement ******-->
+              <a href="">
+                <article class="boxhotel-haut">
+                  <div class="boxhotel_apercu--haut--no2"></div>
+                  <div class="boxhotel_description--haut">
+                    <div class="boxhotel__detail">
+                      <h3>Hôtel du port</h3>
+                      <p>Nuit à partir de <span class="bold">52€</span></p>
                     </div>
-                </section>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°3 de l'hébergement ******-->
+              <a href="">
+                <article class="boxhotel-haut">
+                  <div class="boxhotel_apercu--haut--no3"></div>
+                  <div class="boxhotel_description--haut">
+                    <div class="boxhotel__detail">
+                      <h3>Hôtel Les mouettes</h3>
+                      <p>Nuit à partir de <span class="bold">76€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etgrise"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°4 de l'hébergement ******-->
+              <a href="">
+                <article class="boxhotel-haut">
+                  <div class="boxhotel_apercu--haut--no4"></div>
+                  <div class="boxhotel_description--haut">
+                    <div class="boxhotel__detail">
+                      <h3>Hôtel de la mer</h3>
+                      <p>Nuit à partir de <span class="bold">46€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etgrise"></i>
+                      <i class="fas fa-star etgrise"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°5 de l'hébergement ******-->
+              <a href="">
+                <article class="boxhotel-haut">
+                  <div class="boxhotel_apercu--haut--no5"></div>
+                  <div class="boxhotel_description--haut">
+                    <div class="boxhotel__detail">
+                      <h3>Auberge Le Panier</h3>
+                      <p>Nuit à partir de <span class="bold">23€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etgrise"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°6 de l'hébergement ******-->
+              <a href="">
+                <article class="boxhotel-haut">
+                  <div class="boxhotel_apercu--haut--no6"></div>
+                  <div class="boxhotel_description--haut">
+                    <div class="boxhotel__detail">
+                      <h3>Hôtel chez Amina</h3>
+                      <p>Nuit à partir de <span class="bold">96€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+
+              <div class="list_cut">
+                <a href=""><h2>Afficher plus</h2></a>
+              </div>
             </div>
-        </main>
+          </div>
 
-<!--*****************************************************************************************-->
-<!--                   En dessous, le footer décomposé en 3 blocs horizontaux                -->
-<!--*****************************************************************************************-->
+          <!--****** Le top des hébergements les plus populaires ******-->
 
-        <footer>
-            <div id="footeralign">
-                <div id="footer__apropos">
-                    <h3>A propos</h3>
-                    <ul>
-                        <li><a href="">Fonctionnement du site</a></li>
-                        <li><a href="">Conditions générales de vente</a></li>
-                        <li><a href="">Données et confidentialité</a></li>
-                    </ul>
-                </div>
-                <div id="footer__hebergement">
-                    <h3>Nos hébergements</h3>
-                    <ul>
-                        <li><a href="">Charte qualité</a></li>
-                        <li><a href="">Soumettre votre hôtel</a></li>
-                    </ul>
-
-                </div>
-                <div id="footer__assistance">
-                    <h3>Assistance</h3>
-                    <ul>
-                        <li><a href="">Centre d'aide</a></li>
-                        <li><a href="">Nous contacter</a></li>
-                    </ul>
-
-                </div>
+          <div class="Hebergements__toppopulaire">
+            <div class="Hebergements--header">
+              <i class="fas fa-chart-line"></i>
+              <h2>Les plus populaires</h2>
             </div>
-        </footer>
-    </body>
+            <div class="Hebergements--container">
+              <!--****** BOX N°1 du top hébergement ******-->
+              <a href="">
+                <article class="boxhotel-long">
+                  <div class="boxhotel_apercu--long--no1"></div>
+                  <div class="boxhotel_description--long">
+                    <div class="boxhotel__detail">
+                      <h3>Hôtel Le soleil du matin</h3>
+                      <p>Nuit à partir de <span class="bold">128€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°2 du top hébergement ******-->
+              <a href="">
+                <article class="boxhotel-long">
+                  <div class="boxhotel_apercu--long--no2"></div>
+                  <div class="boxhotel_description--long">
+                    <div class="boxhotel__detail">
+                      <h3>Au c&oelig;ur de l'eau Chambres d'hôtes</h3>
+                      <p>Nuit à partir de <span class="bold">71€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etgrise"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <!--****** BOX N°3 du top hébergement ******-->
+              <a href="">
+                <article class="boxhotel-long">
+                  <div class="boxhotel_apercu--long--no3"></div>
+                  <div class="boxhotel_description--long">
+                    <div class="boxhotel__detail">
+                      <h3>Hôtel Tout bleu et Blanc</h3>
+                      <p>Nuit à partir de <span class="bold">68€</span></p>
+                    </div>
+                    <div class="noteetoile">
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etbleue"></i>
+                      <i class="fas fa-star etgrise"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!--  La liste des résultats portants sur les activités   -->
+
+        <section id="Activites">
+          <h2>Activités à Marseille</h2>
+          <div id="Activites__container">
+            <div class="Activites__container__bloc">
+              <a href="#" class="bloc--b100">
+                <div class="bloc--b100 Activites__container__bloc--no1">
+                  <div class="Activites--Titlebox">
+                    <h3>Vieux Port</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="Activites__container__bloc">
+              <a href="#" class="bloc--b60">
+                <div class="bloc--b60 Activites__container__bloc--no2">
+                  <div class="Activites--Titlebox">
+                    <h3>Fort de Pomègues</h3>
+                  </div>
+                </div>
+              </a>
+              <a class="bloc--bvide"> </a>
+              <a href="#" class="bloc--b40">
+                <div class="bloc--b40 Activites__container__bloc--no3">
+                  <div class="Activites--Titlebox">
+                    <h3>Îles du Frioul</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="Activites__container__bloc">
+              <a href="#" class="bloc--b100">
+                <div class="bloc--b100 Activites__container__bloc--no4">
+                  <div class="Activites--Titlebox">
+                    <h3>Parc National des Calanques</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="Activites__container__bloc">
+              <a href="#" class="bloc--b50">
+                <div class="bloc--b50 Activites__container__bloc--no5">
+                  <div class="Activites--Titlebox">
+                    <h3>Notre-Dame-de-la-Garde</h3>
+                  </div>
+                </div>
+              </a>
+              <a class="bloc--bvide"> </a>
+              <a href="#" class="bloc--b50">
+                <div class="bloc--b50 Activites__container__bloc--no6">
+                  <div class="Activites--Titlebox">
+                    <h3>Parc Longchamp</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--*****************************************************************************************-->
+    <!--                   En dessous, le footer décomposé en 3 blocs horizontaux                -->
+    <!--*****************************************************************************************-->
+
+    <footer>
+      <div id="footeralign">
+        <div id="footer__apropos">
+          <h3>A propos</h3>
+          <ul>
+            <li><a href="">Fonctionnement du site</a></li>
+            <li><a href="">Conditions générales de vente</a></li>
+            <li><a href="">Données et confidentialité</a></li>
+          </ul>
+        </div>
+        <div id="footer__hebergement">
+          <h3>Nos hébergements</h3>
+          <ul>
+            <li><a href="">Charte qualité</a></li>
+            <li><a href="">Soumettre votre hôtel</a></li>
+          </ul>
+        </div>
+        <div id="footer__assistance">
+          <h3>Assistance</h3>
+          <ul>
+            <li><a href="">Centre d'aide</a></li>
+            <li><a href="">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-

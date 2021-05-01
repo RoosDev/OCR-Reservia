@@ -2,182 +2,158 @@
 /* Changement des tailles de police*/
 /***********************************/
 
+main p {
+  font-size: 0.9em;
+  text-align: justify;
+}
 
-main p{
-    font-size: 0.9em;
-    text-align: justify;
-  }
+main a {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
 
-  main a{
-    font-size: 0.8em;
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-  }
+main h1 {
+  font-size: 1.3em;
+}
 
-  main h1{
-    font-size: 1.3em;
-  }
+main h2 {
+  font-size: 1.2em;
+}
 
-
-  main h2{
-    font-size: 1.2em;
-
-  }
-
-  main h3{
-    font-size: 1em;
-
-  }
-
-
+main h3 {
+  font-size: 1em;
+}
 
 /**********************************************************/
 /*       Adaptation de la mise en page de la structure    */
 /**********************************************************/
 
-header{
-    margin: 0px 5px 20px 35px;
-  
-  }
-  
-nav{
-    margin-right: 30px;
-    
-  }
+header {
+  margin: 0px 5px 20px 35px;
+}
 
-main{
-    margin-left: 35px;
-    margin-right: 35px;
-    
-  }
+nav {
+  margin-right: 30px;
+}
 
-footer{
-    margin-top: 30px;
-  }
-  
+main {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+footer {
+  margin-top: 30px;
+}
 
 /**********************************************************/
 /* Adaptation de la mise en page de la section hebergement*/
 /**********************************************************/
 
-#Hebergements{
-    width: 100%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
+#Hebergements {
+  width: 100%;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
 }
 
-    #Hebergements div[class*="Hebergements__"]{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin : 0px 0px 40px 0px ;
-        padding : 0px;
-        
-    }
+#Hebergements div[class*="Hebergements__"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 40px 0px;
+  padding: 0px;
+}
 
+.Hebergements--header h2 {
+  margin: 20px 0px 0px 20px;
+}
 
-        .Hebergements--header h2{
-            margin : 20px 0px 0px 20px;
-        }
+div[class*="Hebergements__"] .Hebergements--container > a {
+  width: 27%;
+  margin: 10px 20px 10px 20px;
+}
+div[class*="Hebergements__"] .Hebergements--container > a:hover {
+  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
+  margin: 5px 25px 15px 15px;
+}
 
+div[class*="boxhotel_description--"] {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px 0px 10px 0px;
+}
 
-        div[class*="Hebergements__"]  .Hebergements--container > a{
-            width: 27%;
-            margin : 10px 20px 10px 20px;
+.boxhotel__detail h3 {
+  margin: 2px 3px 2px 3px;
+}
 
+.boxhotel__detail p {
+  margin: 2px 3px 2px 3px;
+  font-size: 1em;
+}
 
-        }
-        div[class*="Hebergements__"] .Hebergements--container > a:hover{
-            box-shadow: 5px 5px 7px rgba(0, 101, 252,0.5);
-            margin : 5px 25px 15px 15px;
-        }
+/*  Le TOP POPULAIRE des hébergements  */
 
+#Hebergements .Hebergements__toppopulaire {
+  background-color: rgb(222, 235, 255);
+  transition: background-color 0.5s;
+}
 
-        div[class*="boxhotel_description--"]{
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin : 0px 0px 10px 0px;
-        }
+.Hebergements__toppopulaire .Hebergements--container > a {
+  width: 28%;
+}
 
-            .boxhotel__detail h3{
-                margin : 2px 3px 2px 3px; 
-            }
+.Hebergements__toppopulaire .boxhotel-long {
+  width: 100%;
+  flex-direction: column;
+}
 
-            .boxhotel__detail p{
-                margin: 2px 3px 2px 3px;
-                font-size: 1em;
-            }
+.Hebergements__toppopulaire div[class*="boxhotel_apercu--long"] {
+  width: 95%;
+  height: 150px;
+  margin: 5px;
+  border-radius: 15px 15px 0px 0px;
+}
 
+.Hebergements__toppopulaire .boxhotel_description--long {
+  margin: 0px;
+  min-height: 100px;
+}
+/*  Les résultats des hébergements  */
 
+.Hebergements__liste div[class*="boxhotel_apercu--haut"] {
+  width: 95%;
+  height: 150px;
+  margin: 5px;
+}
 
-    /*  Le TOP POPULAIRE des hébergements  */
+#Hebergements .noteetoile {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+.Hebergements--container .list_cut {
+  width: 100%;
+  justify-content: start;
+  margin: 3px 10px 20px 20px;
+}
 
-
-    #Hebergements .Hebergements__toppopulaire{
-        background-color: rgb(222,235,255);
-        transition: background-color 0.5s;
-    }
-
-    .Hebergements__toppopulaire .Hebergements--container > a{
-        width: 28%;
-    }
-
-    .Hebergements__toppopulaire .boxhotel-long{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .Hebergements__toppopulaire div[class*="boxhotel_apercu--long"]{
-        width: 95%;
-        height: 150px;
-        margin: 5px;
-        border-radius: 15px 15px 0px 0px;
-
-        }
-
-        .Hebergements__toppopulaire .boxhotel_description--long{
-            margin : 0px;
-            min-height: 100px;
-
-        }
-    /*  Les résultats des hébergements  */
-
-    .Hebergements__liste div[class*="boxhotel_apercu--haut"]{
-        width: 95%;
-        height: 150px;
-        margin: 5px;
-        }
-
-            #Hebergements .noteetoile{
-                Margin-top : 10px;
-                margin-left : 3px;
-
-            }
-    .Hebergements--container .list_cut{
-        width: 100%;
-        justify-content: start;
-        margin : 3px 10px 20px 20px;
-    }
-    
-    
 /**********************************************************/
 /* Adaptation de la mise en page de la section activites  */
 /**********************************************************/
 
-#Activites{
-    margin-top: 0px;
+#Activites {
+  margin-top: 0px;
 }
 
-    #Activites__container{
-        margin-top : 30px;
-        height: 350px;
-    }
-
+#Activites__container {
+  margin-top: 30px;
+  height: 350px;
+}
