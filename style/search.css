@@ -17,8 +17,7 @@
 
 .search__box {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 15px;
@@ -89,8 +88,7 @@
 
 .search__filters {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
 }
@@ -101,8 +99,7 @@
 
 .search__filters ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -198,10 +195,9 @@ a[class*="button--"] h3 {
 #Hebergements {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 /*********************************************************************/
@@ -233,9 +229,8 @@ div[class*="Hebergements__"] {
   clear: both;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -279,8 +274,7 @@ div[class*="boxhotel_apercu--"] {
 div[class*="boxhotel_description--"] {
   width: 80%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0px 10px 10px 40px;
@@ -426,8 +420,7 @@ div[class*="boxhotel_description--"] {
   width: 100%;
   height: 500px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
