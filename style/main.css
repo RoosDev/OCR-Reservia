@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 0px;
 }
 
 /* Mise en page du header*/
@@ -149,6 +149,7 @@ main {
 footer {
   background-color: rgb(242, 242, 242);
   margin-top: 50px;
+  width: 100%;
 }
 
 #footeralign {

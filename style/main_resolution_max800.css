@@ -24,10 +24,24 @@ body h2 {
 body h3 {
   font-size: 1.1em;
 }
+/**********************************************************/
+/* Adaptation de la mise en page du champs de recherche*/
+/**********************************************************/
+.search__box input[type="text"] {
+  width: 170px;
+  padding-left: 10px;
+  font-size: 0.9em;
+  border-right: 0px;
+  transition: all 500ms;
+}
 
 /**********************************************************/
 /* Adaptation de la mise en page de la section hebergement*/
 /**********************************************************/
+#Herberments div[class*="Hebergements__"] {
+  padding: 0px;
+  width: 100%;
+}
 
 #Hebergements .Hebergements__toppopulaire .Hebergements--header h2 {
   width: 90%;
