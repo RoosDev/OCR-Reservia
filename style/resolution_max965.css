@@ -1,0 +1,62 @@
+/** la mise en page en version PODIUM des 3 premiers **/
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container{
+    flex-wrap: wrap-reverse;
+}
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container > a {
+    width: 45%;
+    margin: 10px 15px 10px 15px;
+    z-index: 0;
+  }
+  #Hebergements .Hebergements__toppopulaire .Hebergements--container > a:hover {
+    margin: 5px 20px 15px 10px;
+  }
+  
+
+
+  .Hebergements__toppopulaire .Hebergements--container div[class*="numero__toppopulaire"]{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: -20px;
+    border-radius: 50%;
+    background-color: royalblue;
+    z-index: 10;
+  }
+
+    .Hebergements__toppopulaire .Hebergements--container div[class*="numero__toppopulaire"] h3{
+      width: 40px;
+      text-align: center;
+      vertical-align: top;
+      line-height: 100%;
+      font-weight: bold;
+      color:#fff;
+    }
+
+  #Hebergements .Hebergements__toppopulaire .Hebergements--container .toppopulaire1{
+    order: 3;
+  } 
+
+  #Hebergements .Hebergements__toppopulaire .Hebergements--container .toppopulaire2{
+    order:1;
+  }
+
+  #Hebergements .Hebergements__toppopulaire .Hebergements--container .toppopulaire3{
+    order:2;  
+  }
+
+
+
+
+/** afficahe de la liste **/
+
+  #Hebergements .Hebergements__liste .Hebergements--container > a {
+    width: 27%;
+    margin: 10px 15px 0px 15px;
+  }
+  #Hebergements .Hebergements__liste .Hebergements--container > a:hover {
+    margin: 5px 20px 5px 10px;
+  }
+  

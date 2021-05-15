@@ -1,0 +1,40 @@
+/*  Mise en page du container qui accueil le contenu des pages*/
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(242, 242, 242);
+  }
+  
+  #footeralign {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 40px 0px 40px 0px;
+  }
+
+  
+  div[id*="footer__"] {
+    width: 28%;
+    margin-left :20px;
+  }
+  div[id*="footer__"] h3{
+    margin-left :40px;
+  }
+  
+  footer a {
+    font-size: 1em;
+    margin-left: 0px;
+    transition: margin-left 0.5s;
+  }
+  
+  footer a:hover {
+    margin-left: 20px;
+    transition: margin-left 0.3s;
+  }
+
+  
+  footer ul li {
+    margin: 10px 0px 15px 0px;
+  }

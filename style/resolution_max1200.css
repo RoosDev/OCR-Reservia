@@ -1,0 +1,87 @@
+/***********************************/
+/* Changement des tailles de police*/
+/***********************************/
+
+main p {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+main a {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+main h1 {
+  font-size: 1.3em;
+}
+
+main h2 {
+  font-size: 1.2em;
+}
+
+main h3 {
+  font-size: 1em;
+}
+
+
+
+/**********************************************************/
+/* Adaptation de la mise en page de la section hebergement*/
+/**********************************************************/
+
+#Container__results #Hebergements{
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+
+}
+
+div[class*="Hebergements__"] {
+  padding: 0;
+}
+
+
+/** adapatation de la zone en liste **/
+
+
+.Hebergements__liste {
+  width: 95%;
+}
+
+
+#Hebergements .Hebergements__liste .Hebergements--container > a {
+  width: 30%;
+  margin: 10px 15px 0px 15px;
+}
+#Hebergements .Hebergements__liste .Hebergements--container > a:hover {
+  margin: 5px 20px 5px 10px;
+}
+
+
+/** adapatation de la zone TOP POPULAIRE  qui passe en tete**/
+
+#Hebergements .Hebergements__toppopulaire{
+  width: 95%;    
+  margin: 0px 0px 40px 0px ;
+  background-color: rgb(222, 235, 255);
+  padding-bottom: 35px;
+
+}
+
+  #Hebergements .Hebergements__toppopulaire .Hebergements--container{
+    
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container > a {
+  width: 30%;
+  margin: 10px 15px 0px 15px;
+}
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container > a:hover {
+  margin: 5px 20px 5px 10px;
+}

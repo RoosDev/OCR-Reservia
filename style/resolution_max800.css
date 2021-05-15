@@ -43,18 +43,38 @@ body h3 {
   width: 100%;
 }
 
+#Container__results #Hebergements {
+  margin: 0px;
+}
+
+/** le top populaire **/
+
+#Container__results #Hebergements .Hebergements__toppopulaire{
+  margin-bottom: 30px;
+}
+
+
 #Hebergements .Hebergements__toppopulaire .Hebergements--header h2 {
   width: 90%;
   margin: 20px 0px 15px 20px;
 }
 
-#Hebergements .Hebergements__liste .Hebergements--container > a {
-  width: 45%;
-  margin: 10px 5px 10px 5px;
+#Hebergements .Hebergements__toppopulaire .Hebergements--container {
+  margin-bottom: 0px;
 }
-#Hebergements .Hebergements__liste .Hebergements--container > a:hover {
-  margin: 5px 10px 15px 0px;
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container .toppopulaire1{
+  order: 3;
+} 
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container .toppopulaire2{
+  order:2;
 }
+
+#Hebergements .Hebergements__toppopulaire .Hebergements--container .toppopulaire3{
+  order:1;  
+}
+
 
 #Hebergements .Hebergements__toppopulaire .Hebergements--container > a {
   width: 100%;
@@ -63,15 +83,13 @@ body h3 {
   display: flex;
 }
 
-.Hebergements__toppopulaire .Hebergements--container > a:hover {
+#Hebergements .Hebergements__toppopulaire .Hebergements--container > a:hover {
   box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
-  margin: 5px 25px 25px 15px;
+  margin: 5px 25px 15px 15px;
 }
-
-#Hebergements .Hebergements__toppopulaire .Hebergements--container {
-  margin-bottom: 30px;
+.Hebergements__toppopulaire .Hebergements--container div[class*="numero__toppopulaire"] h3{
+  font-size: 0.8em;
 }
-
 .Hebergements__toppopulaire .boxhotel-long {
   width: 100%;
   flex-direction: row;
@@ -89,7 +107,16 @@ body h3 {
   min-height: 100px;
 }
 
-/*  Les résultats des hébergements  */
+
+/** la liste des resultats **/
+
+#Hebergements .Hebergements__liste .Hebergements--container > a {
+  width: 45%;
+  margin: 10px 5px 10px 5px;
+}
+#Hebergements .Hebergements__liste .Hebergements--container > a:hover {
+  margin: 5px 10px 15px 0px;
+}
 
 .Hebergements__liste div[class*="boxhotel_apercu--haut"] {
   width: 95%;
@@ -97,12 +124,14 @@ body h3 {
   margin: 5px;
 }
 
+
+/* Mise en forme des box hotel : le commun à toutes*/
+
+
 #Hebergements .noteetoile {
   margin-top: 10px;
   margin-left: 3px;
 }
-
-/* Mise en forme des box hotel : le commun à toutes*/
 
 .Hebergements--container > a {
   width: 45%;
@@ -116,4 +145,8 @@ body h3 {
 
 div[class*="bloc--b"] .Activites--Titlebox h3 {
   font-size: 0.9em;
+}
+
+footer{
+  width: 100%;
 }

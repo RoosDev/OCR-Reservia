@@ -38,7 +38,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  text-align: justify;
 }
 
 ul {
@@ -58,122 +59,25 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   margin: 0px;
+  overflow-x: hidden;
+
 }
 
-/* Mise en page du header*/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 5px 20px 55px;
-}
-
-/*  Mise en forme du logo */
-#header__logo {
-  width: 20%;
-  margin-top: 0px;
-  padding: 0px;
-}
-
-#header__logo img {
-  width: 105px;
-  margin-top: 40px;
-}
-
-/*      Mise en page du menu de navigation   */
-nav {
-  margin-top: 0px;
-  margin-right: 50px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 0px;
-}
-
-nav ul li {
-  padding-top: 40px;
-  border-top: 3px solid rgb(255, 255, 255);
-}
-
-nav ul .navvide {
-  display: none;
-}
-
-nav ul li:hover,
-nav ul li:target,
-nav ul li:focus,
-nav ul li:active {
-  border-top: 3px solid rgb(0, 101, 252);
-}
-
-nav ul li a {
-  margin: 30px;
-  font-size: 1em;
-}
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li:target,
-nav ul li:active {
-  color: rgb(0, 101, 252);
-}
-
-nav ul .signin a {
-  color: rgb(0, 101, 252);
-  font-weight: 600;
-}
 
 /*  Mise en page du container qui accueil le contenu des pages*/
 
 main {
+  width: 100%;
   padding: 0px;
   margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 55px;
-  margin-right: 55px;
+  margin: 0px;
 }
 
-/*  Mise en page du container qui accueil le contenu des pages*/
-
-footer {
-  background-color: rgb(242, 242, 242);
-  margin-top: 50px;
-  width: 100%;
-}
-
-#footeralign {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 40px 60px 40px 60px;
-}
-
-footer a {
-  font-size: 1em;
-  transition: margin-left 0.5s;
-}
-
-footer a:hover {
-  margin-left: 20px;
-  transition: margin-left 0.3s;
-}
-
-footer ul li {
-  margin: 10px 0px 15px -40px;
-}
-
-div[id*="footer__"] {
-  width: 33%;
-}

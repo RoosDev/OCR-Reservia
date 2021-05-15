@@ -7,6 +7,7 @@ body {
 /**********************************************************/
 
 header {
+  width:100%;
   margin: 0px;
   padding: 0px;
   flex-direction: column;
@@ -105,6 +106,10 @@ main {
 footer {
   margin: 0px;
 }
+footer div[id*="footer__"] h3{
+  margin-left :0px;
+}
+
 
 #footeralign {
   flex-direction: column;
@@ -197,10 +202,7 @@ footer ul li {
   margin-bottom: 0px;
 }
 
-#Container__results
-  #Hebergements
-  div[class*="Hebergements__"]
-  .Hebergements--container
+#Container__results #Hebergements div[class*="Hebergements__"] .Hebergements--container
   > a {
   width: 100%;
   padding: 0px;
@@ -208,9 +210,9 @@ footer ul li {
   display: flex;
 }
 
-#Container__results #Hebergements .Hebergements--container > a:hover {
+#Container__results #Hebergements div[class*="Hebergements__"] .Hebergements--container > a:hover {
   box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
-  margin: 5px 25px 25px 15px;
+  margin: 5px 25px 15px 15px;
 }
 
 #Container__results #Hebergements div[class*="boxhotel_description--"] {
@@ -247,13 +249,18 @@ footer ul li {
   transition: background-color 0.5s;
 }
 
+.Hebergements__toppopulaire .Hebergements--container div[class*="numero__toppopulaire"]{
+  display: none;
+
+}
+
 /**********************************************************/
 /* Adaptation de la mise en page de la section activites  */
 /**********************************************************/
 
 #Activites {
   width: 90%;
-  margin-top: 0px;
+  margin: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -262,7 +269,7 @@ footer ul li {
 
 #Activites #Activites__container {
   width: 100%;
-  margin-top: 30px;
+  margin: 30px 0 20px 0;
   height: auto;
   flex-direction: column;
   flex-wrap: nowrap;

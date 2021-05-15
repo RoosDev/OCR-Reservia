@@ -27,23 +27,32 @@ h3 {
 
 /* Mise en forme des box hotel : le commun à toutes*/
 
-#Hebergements {
-  justify-content: space-around;
-}
 
 div[class*="Hebergements__"] {
   padding: 10px;
 }
 
-.Hebergements__liste {
-  margin-right: 20px;
-  width: 65%;
+div[class*="Hebergements__"]  .Hebergements--container > a {
+  margin: 10px 15px 10px 15px;
 }
 
-.Hebergements--container > a {
+div[class*="Hebergements__"] .Hebergements--container > a:hover {
+  margin: 5px 20px 15px 10px;
+}
+
+
+
+.Hebergements__liste {
+  width: 62%;
+  margin-right: 20px;
+}
+
+.Hebergements__liste .Hebergements--container > a {
   width: 45%;
-  margin: 10px 5px 10px 5px;
 }
-.Hebergements--container > a:hover {
-  margin: 5px 10px 15px 0px;
+
+.Hebergements__toppopulaire {
+ padding-bottom: 75px;
+ margin-right: 20px;
 }
+

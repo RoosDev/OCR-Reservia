@@ -5,6 +5,7 @@
 /*************************************************************/
 
 #Container__search {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,12 +16,18 @@
 /*     Mise en forme du champs de recherche   */
 /**********************************************/
 
+.search__text{
+  margin-left : 25px;
+
+}
+
 .search__box {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 15px;
+  margin-left : 25px;
 }
 
 .search__box span {
@@ -91,6 +98,7 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 25px;
 }
 
 .search__filters h3 {
@@ -160,7 +168,7 @@ a[class*="button--"] h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -173,7 +181,7 @@ a[class*="button--"] h3 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 5px 20px 30px 10px;
+  margin: 5px 20px 30px 25px;
 }
 
 .results--number span {
@@ -199,6 +207,7 @@ a[class*="button--"] h3 {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0px;
 }
 
 /*********************************************************************/
@@ -206,15 +215,13 @@ a[class*="button--"] h3 {
 /*********************************************************************/
 
 div[class*="Hebergements__"] {
-  height: 100%;
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
   border-radius: 0px;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px;
 }
 
 .Hebergements--header {
@@ -223,7 +230,7 @@ div[class*="Hebergements__"] {
 
 .Hebergements--header h2 {
   width: 100%;
-  margin: 10px;
+  margin: 30px;
 }
 
 .Hebergements--container {
@@ -231,7 +238,7 @@ div[class*="Hebergements__"] {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -240,24 +247,15 @@ div[class*="Hebergements__"] {
 .Hebergements--container > a {
   width: 28%;
   margin: 15px 10px 15px 10px;
-  display: inline-block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.Hebergements--container > a:hover {
-  margin: 10px 15px 20px 5px;
-  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
-}
-
-article[class*="boxhotel-"] {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 div[class*="boxhotel_apercu--"] {
   position: relative;
@@ -273,16 +271,17 @@ div[class*="boxhotel_apercu--"] {
 }
 
 div[class*="boxhotel_description--"] {
-  width: 80%;
+  width: 95%;
+  margin-left: 10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0px 10px 10px 40px;
 }
 
 .boxhotel__detail {
   width: 95%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -292,24 +291,24 @@ div[class*="boxhotel_description--"] {
 .boxhotel__detail h3 {
   margin-top: 2px;
   margin-bottom: 7px;
-  text-overflow: ellipsis;
+  white-space: initial;
 }
 
 .boxhotel__detail p {
   margin: 0px;
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 
 .noteetoile {
   margin: 10px 10px 10px 0px;
-  font-size: 1em;
+  font-size: 1.0em;
 }
 
-.etbleue {
+.etoilebleue {
   color: rgb(0, 101, 252);
 }
 
-.etgrise {
+.etoilegrise {
   color: rgb(217, 217, 217);
 }
 
@@ -318,17 +317,22 @@ div[class*="boxhotel_description--"] {
 /*************************************************/
 
 .Hebergements__liste {
-  width: 61%;
+  width: 67%;
+  margin-left : 25px;
+  margin-right: 5px;
   flex-direction: column;
 }
+
+
 
 /* Mise en forme des box hotel : spécifique à la version haute*/
 
-.Hebergements__liste .boxhotel-haut {
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
+.Hebergements__liste .Hebergements--container > a:hover {
+  margin: 10px 15px 20px 5px;
+  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
 }
+
+
 
 .boxhotel_apercu--haut--no1 {
   background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -359,11 +363,15 @@ div[class*="boxhotel_description--"] {
 /* Les mise en forme spécifique hébergement TOP */
 /************************************************/
 
-.Hebergements__toppopulaire {
-  width: 28%;
+#Hebergements .Hebergements__toppopulaire {
+  width: 27%;
   height: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 30px;
+  margin-left: 10px;
+  padding-bottom: 10px;
 }
 
 .Hebergements__toppopulaire .fa-chart-line {
@@ -373,19 +381,35 @@ div[class*="boxhotel_description--"] {
 }
 
 /* Mise en forme des box hotel : spécifique à la version haute*/
+.Hebergements__toppopulaire .Hebergements--container{
+  width: 100%;
+  align-self: center;
 
-.Hebergements__toppopulaire .Hebergements--container > a {
-  width: 95%;
 }
 
-.Hebergements__toppopulaire .boxhotel-long {
+
+
+.Hebergements__toppopulaire .Hebergements--container > a {
   width: 100%;
-  flex-direction: row;
+  margin:  25px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hebergements--container > a:hover {
+  margin: 20px 30px 30px 20px;
+  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
+}
+
+div[class*="numero__toppopulaire"]{
+  display: none;
 }
 
 .Hebergements__toppopulaire div[class*="boxhotel_apercu--long"] {
-  width: 250px;
-  min-height: 150px;
+  width: 220px;
+  height: 150px;
   border-radius: 15px 0px 0px 15px;
   background-size: cover;
 }
@@ -401,7 +425,7 @@ div[class*="boxhotel_description--"] {
 }
 
 .Hebergements__toppopulaire .boxhotel_description--long {
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 10px;
   min-height: 140px;
 }
 
@@ -416,13 +440,17 @@ div[class*="boxhotel_description--"] {
   width: 100%;
 }
 
+#Activites h2{
+  margin-left : 25px;
+}
+
 #Activites__container {
-  width: 100%;
   height: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin : 0 25px 0 25px;  
 }
 
 .Activites__container__bloc {
