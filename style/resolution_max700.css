@@ -1,0 +1,26 @@
+/**********************************************************/
+/* Adaptation de la mise en page de la section hebergement*/
+/**********************************************************/
+
+#Container__results #Hebergements {
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+#Container__results #Hebergements div[class*="Hebergements__"] {
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+#Container__results
+  #Hebergements
+  div[class*="Hebergements__"]
+  .Hebergements--header
+  h2 {
+  width: 90%;
+  margin: 20px 0px 15px 20px;
+}

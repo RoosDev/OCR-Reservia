@@ -1,0 +1,41 @@
+/**  on efface tout  **/
+header #header__logo {
+  display: block;
+}
+header #header__logo img {
+  margin-top: 10px;
+}
+
+nav {
+  display: none;
+}
+main {
+  display: none;
+}
+
+/**  réglage du restant  **/
+
+aside {
+  display: block;
+}
+
+aside h2 {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 20px 3px 20px 3px;
+}
+
+footer {
+  margin: 0px;
+}
+
+footer #footeralign {
+  margin-left: 0px;
+}
+
+footer #footer__apropos {
+  display: none;
+}
+footer #footer__hebergement {
+  display: none;
+}

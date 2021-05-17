@@ -25,30 +25,26 @@ main h3 {
   font-size: 1em;
 }
 
-
-
 /**********************************************************/
 /* Adaptation de la mise en page de la section hebergement*/
 /**********************************************************/
 
-#Container__results #Hebergements{
+#Container__results #Hebergements {
   flex-flow: column-reverse nowrap;
   align-items: center;
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
 div[class*="Hebergements__"] {
   padding: 0;
 }
 
-
 /** adapatation de la zone en liste **/
-
 
 .Hebergements__liste {
   width: 95%;
 }
-
 
 #Hebergements .Hebergements__liste .Hebergements--container > a {
   width: 30%;
@@ -58,24 +54,20 @@ div[class*="Hebergements__"] {
   margin: 5px 20px 5px 10px;
 }
 
-
 /** adapatation de la zone TOP POPULAIRE  qui passe en tete**/
 
-#Hebergements .Hebergements__toppopulaire{
-  width: 95%;    
-  margin: 0px 0px 40px 0px ;
+#Hebergements .Hebergements__toppopulaire {
+  width: 95%;
+  margin: 0px 0px 40px 0px;
   background-color: rgb(222, 235, 255);
   padding-bottom: 35px;
-
 }
 
-  #Hebergements .Hebergements__toppopulaire .Hebergements--container{
-    
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-
-  }
+#Hebergements .Hebergements__toppopulaire .Hebergements--container {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 
 #Hebergements .Hebergements__toppopulaire .Hebergements--container > a {
   width: 30%;

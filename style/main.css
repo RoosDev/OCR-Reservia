@@ -57,13 +57,7 @@ span > i[class*="fas"] {
 /*  Paramétrage des propiétés de la trame générale et éléments communs*/
 body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
   margin: 0px;
-  overflow-x: hidden;
 
 }
 

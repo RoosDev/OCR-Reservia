@@ -16,9 +16,8 @@
 /*     Mise en forme du champs de recherche   */
 /**********************************************/
 
-.search__text{
-  margin-left : 25px;
-
+.search__text {
+  margin-left: 25px;
 }
 
 .search__box {
@@ -27,7 +26,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 15px;
-  margin-left : 25px;
+  margin-left: 25px;
 }
 
 .search__box span {
@@ -245,10 +244,9 @@ div[class*="Hebergements__"] {
 /* Mise en forme des box hotel : le commun à toutes*/
 
 .Hebergements--container > a {
-  width: 28%;
-  margin: 15px 10px 15px 10px;
   display: flex;
-  flex-flow: row wrap;
+  margin: 15px 10px 15px 10px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
@@ -256,17 +254,10 @@ div[class*="Hebergements__"] {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-
 div[class*="boxhotel_apercu--"] {
-  position: relative;
-  width: 97%;
   margin: 5px;
-  text-align: center;
-  max-height: 170px;
-  min-height: 125px;
-  border-radius: 20px 20px 0px 0px;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -296,12 +287,12 @@ div[class*="boxhotel_description--"] {
 
 .boxhotel__detail p {
   margin: 0px;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 .noteetoile {
   margin: 10px 10px 10px 0px;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 .etoilebleue {
@@ -318,21 +309,29 @@ div[class*="boxhotel_description--"] {
 
 .Hebergements__liste {
   width: 67%;
-  margin-left : 25px;
+  margin-left: 25px;
   margin-right: 5px;
   flex-direction: column;
 }
 
-
-
 /* Mise en forme des box hotel : spécifique à la version haute*/
+
+.Hebergements__liste .Hebergements--container > a {
+  width: 28%;
+  flex-wrap: wrap;
+}
 
 .Hebergements__liste .Hebergements--container > a:hover {
   margin: 10px 15px 20px 5px;
   box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
 }
 
-
+.Hebergements__liste div[class*="boxhotel_apercu--haut"] {
+  width: 97%;
+  max-height: 170px;
+  min-height: 125px;
+  border-radius: 20px 20px 0px 0px;
+}
 
 .boxhotel_apercu--haut--no1 {
   background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -367,8 +366,6 @@ div[class*="boxhotel_description--"] {
   width: 27%;
   height: 100%;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   margin-right: 30px;
   margin-left: 10px;
   padding-bottom: 10px;
@@ -381,21 +378,14 @@ div[class*="boxhotel_description--"] {
 }
 
 /* Mise en forme des box hotel : spécifique à la version haute*/
-.Hebergements__toppopulaire .Hebergements--container{
+.Hebergements__toppopulaire .Hebergements--container {
   width: 100%;
   align-self: center;
-
 }
 
-
-
 .Hebergements__toppopulaire .Hebergements--container > a {
-  width: 100%;
-  margin:  25px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  width: 95%;
+  flex-wrap: nowrap;
 }
 
 .Hebergements--container > a:hover {
@@ -403,7 +393,7 @@ div[class*="boxhotel_description--"] {
   box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
 }
 
-div[class*="numero__toppopulaire"]{
+div[class*="numero__toppopulaire"] {
   display: none;
 }
 
@@ -425,7 +415,6 @@ div[class*="numero__toppopulaire"]{
 }
 
 .Hebergements__toppopulaire .boxhotel_description--long {
-  margin: 0px 0px 0px 10px;
   min-height: 140px;
 }
 
@@ -440,8 +429,8 @@ div[class*="numero__toppopulaire"]{
   width: 100%;
 }
 
-#Activites h2{
-  margin-left : 25px;
+#Activites h2 {
+  margin-left: 25px;
 }
 
 #Activites__container {
@@ -450,7 +439,7 @@ div[class*="numero__toppopulaire"]{
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin : 0 25px 0 25px;  
+  margin: 0 25px 0 25px;
 }
 
 .Activites__container__bloc {
