@@ -110,14 +110,14 @@ footer div[id*="footer__"] h3 {
   margin-left: 0px;
 }
 
-#footeralign {
+footer #footeralign {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   margin: 30px;
 }
 
-div[id*="footer__"] {
+footer div[id*="footer__"] {
   width: 100%;
 }
 

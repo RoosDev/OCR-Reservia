@@ -58,9 +58,7 @@ span > i[class*="fas"] {
 body {
   width: 100%;
   margin: 0px;
-
 }
-
 
 /*  Mise en page du container qui accueil le contenu des pages*/
 
@@ -74,4 +72,3 @@ main {
   align-items: flex-start;
   margin: 0px;
 }
-

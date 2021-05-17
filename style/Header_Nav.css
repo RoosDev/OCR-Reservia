@@ -1,72 +1,69 @@
 /* Mise en page du header*/
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px ;
-    
-  }
-  
-  /*  Mise en forme du logo */
-  #header__logo {
-    width: 20%;
-    margin-top: 0px;
-    margin-left : 25px;
-    padding: 0px;
-  }
-  
-  #header__logo img {
-    width: 105px;
-    margin-top: 40px;
-  }
-  
-  /*      Mise en page du menu de navigation   */
-  nav {
-    margin-top: 0px;
-    margin-right: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 0px;
-  }
-  
-  nav ul li {
-    padding-top: 40px;
-    border-top: 3px solid rgb(255, 255, 255);
-  }
-  
-  nav ul .navvide {
-    display: none;
-  }
-  
-  nav ul li:hover,
-  nav ul li:target,
-  nav ul li:focus,
-  nav ul li:active {
-    border-top: 3px solid rgb(0, 101, 252);
-  }
-  
-  nav ul li a {
-    margin: 30px;
-    font-size: 1em;
-  }
-  nav ul li a:hover,
-  nav ul li a:focus,
-  nav ul li:target,
-  nav ul li:active {
-    color: rgb(0, 101, 252);
-  }
-  
-  nav ul .signin a {
-    color: rgb(0, 101, 252);
-    font-weight: 600;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+/*  Mise en forme du logo */
+#header__logo {
+  width: 20%;
+  margin-top: 0px;
+  margin-left: 25px;
+  padding: 0px;
+}
+
+#header__logo img {
+  width: 105px;
+  margin-top: 40px;
+}
+
+/*      Mise en page du menu de navigation   */
+nav {
+  margin-top: 0px;
+  margin-right: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0px;
+}
+
+nav ul li {
+  padding-top: 40px;
+  border-top: 3px solid rgb(255, 255, 255);
+}
+
+nav ul .navvide {
+  display: none;
+}
+
+nav ul li:hover,
+nav ul li:target,
+nav ul li:focus,
+nav ul li:active {
+  border-top: 3px solid rgb(0, 101, 252);
+}
+
+nav ul li a {
+  margin: 30px;
+  font-size: 1em;
+}
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li:target,
+nav ul li:active {
+  color: rgb(0, 101, 252);
+}
+
+nav ul .signin a {
+  color: rgb(0, 101, 252);
+  font-weight: 600;
+}

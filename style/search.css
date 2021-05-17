@@ -219,6 +219,7 @@ div[class*="Hebergements__"] {
   border-radius: 0px;
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -228,7 +229,7 @@ div[class*="Hebergements__"] {
 }
 
 .Hebergements--header h2 {
-  width: 100%;
+  width: 90%;
   margin: 30px;
 }
 
@@ -252,6 +253,11 @@ div[class*="Hebergements__"] {
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Hebergements--container > a:hover {
+  margin: 10px 15px 20px 5px;
+  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
 }
 
 div[class*="boxhotel_apercu--"] {
@@ -311,7 +317,6 @@ div[class*="boxhotel_description--"] {
   width: 67%;
   margin-left: 25px;
   margin-right: 5px;
-  flex-direction: column;
 }
 
 /* Mise en forme des box hotel : spécifique à la version haute*/
@@ -319,11 +324,6 @@ div[class*="boxhotel_description--"] {
 .Hebergements__liste .Hebergements--container > a {
   width: 28%;
   flex-wrap: wrap;
-}
-
-.Hebergements__liste .Hebergements--container > a:hover {
-  margin: 10px 15px 20px 5px;
-  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
 }
 
 .Hebergements__liste div[class*="boxhotel_apercu--haut"] {
@@ -365,10 +365,9 @@ div[class*="boxhotel_description--"] {
 #Hebergements .Hebergements__toppopulaire {
   width: 27%;
   height: 100%;
-  flex-direction: column;
   margin-right: 30px;
   margin-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .Hebergements__toppopulaire .fa-chart-line {
@@ -379,7 +378,6 @@ div[class*="boxhotel_description--"] {
 
 /* Mise en forme des box hotel : spécifique à la version haute*/
 .Hebergements__toppopulaire .Hebergements--container {
-  width: 100%;
   align-self: center;
 }
 
@@ -388,13 +386,27 @@ div[class*="boxhotel_description--"] {
   flex-wrap: nowrap;
 }
 
-.Hebergements--container > a:hover {
-  margin: 20px 30px 30px 20px;
-  box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
-}
-
 div[class*="numero__toppopulaire"] {
   display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  border-radius: 50%;
+  background-color: royalblue;
+  z-index: 10;
+}
+
+.Hebergements__toppopulaire
+  .Hebergements--container
+  div[class*="numero__toppopulaire"]
+  h3 {
+  width: 40px;
+  text-align: center;
+  vertical-align: top;
+  line-height: 100%;
+  font-weight: bold;
+  color: #fff;
 }
 
 .Hebergements__toppopulaire div[class*="boxhotel_apercu--long"] {
@@ -431,6 +443,7 @@ div[class*="numero__toppopulaire"] {
 
 #Activites h2 {
   margin-left: 25px;
+  width: 90%;
 }
 
 #Activites__container {

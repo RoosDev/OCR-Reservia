@@ -7,7 +7,7 @@ footer {
   background-color: rgb(242, 242, 242);
 }
 
-footer #footeralign {
+#footeralign {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

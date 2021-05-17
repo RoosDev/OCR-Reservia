@@ -25,6 +25,18 @@ body h3 {
   font-size: 1.1em;
 }
 /**********************************************************/
+/* Adaptation de la mise en page du menu de navigation    */
+/**********************************************************/
+
+nav {
+  margin-right: 0px;
+}
+
+nav ul li a {
+  margin: 20px;
+}
+
+/**********************************************************/
 /* Adaptation de la mise en page du champs de recherche*/
 /**********************************************************/
 .search__box input[type="text"] {
@@ -150,6 +162,3 @@ div[class*="bloc--b"] .Activites--Titlebox h3 {
   font-size: 0.9em;
 }
 
-footer {
-  width: 100%;
-}
