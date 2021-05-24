@@ -5,8 +5,7 @@
 /*************************************************************/
 
 #Container__search {
-  width: 98%;
-  margin : auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -165,8 +164,7 @@ a[class*="button--"] h3 {
 /****************************************************************/
 
 #Container__results {
-  width: 98%;
-  margin : auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
