@@ -16,7 +16,7 @@
 /*  Définition des paramètres pour les écris   */
 p {
   font-size: 1em;
-  text-align: justify;
+  text-align:justify;
 }
 
 .bold {
@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   font-size: 1.1em;
-  text-align: justify;
+  text-align: left;
 }
 
 ul {
