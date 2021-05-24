@@ -378,11 +378,12 @@ div[class*="boxhotel_description--"] {
 
 /* Mise en forme des box hotel : spécifique à la version haute*/
 .Hebergements__toppopulaire .Hebergements--container {
+  width: 95%;
   align-self: center;
 }
 
 .Hebergements__toppopulaire .Hebergements--container > a {
-  width: 95%;
+  width: 100%;
   flex-wrap: nowrap;
 }
 

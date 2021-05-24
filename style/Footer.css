@@ -2,23 +2,18 @@
 
 footer {
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  background-color: rgb(242, 242, 242);
-}
-
-#footeralign {
+  margin: 50px 0px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 40px 0px 0px 0px;
+  background-color: rgb(242, 242, 242);
+
 }
 
 div[id*="footer__"] {
   width: 28%;
-  margin-left: 20px;
-  margin-bottom: 40px;
+  margin: 40px auto 40px 20px;
 }
 div[id*="footer__"] h3 {
   margin-left: 40px;
