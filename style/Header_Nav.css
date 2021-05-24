@@ -1,9 +1,10 @@
 /* Mise en page du header*/
 header {
+  width: 98%;
+  margin: 0px auto 0px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px;
 }
 
 /*  Mise en forme du logo */
