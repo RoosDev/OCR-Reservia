@@ -16,7 +16,7 @@
 /*  Définition des paramètres pour les écris   */
 p {
   font-size: 1em;
-  text-align:justify;
+  text-align: justify;
 }
 
 .bold {
@@ -58,6 +58,7 @@ span > i[class*="fas"] {
 body {
   width: 100%;
   margin: 0px;
+  padding: 0px;
 }
 
 /*  Mise en page du container qui accueil le contenu des pages*/

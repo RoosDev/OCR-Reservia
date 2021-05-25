@@ -25,18 +25,18 @@ h3 {
   font-size: 1.1em;
 }
 
+/* Mise en forme de la structure globale*/
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
 /* Mise en forme des box hotel : le commun à toutes*/
 
 div[class*="Hebergements__"] {
   padding: 10px;
-}
-
-div[class*="Hebergements__"] .Hebergements--container > a {
-  margin: 10px 15px 10px 15px;
-}
-
-div[class*="Hebergements__"] .Hebergements--container > a:hover {
-  margin: 5px 20px 15px 10px;
 }
 
 .Hebergements__liste {
@@ -44,11 +44,24 @@ div[class*="Hebergements__"] .Hebergements--container > a:hover {
   margin-right: 20px;
 }
 
+.Hebergements__liste .Hebergements--container {
+  width: 100%;
+}
+
 .Hebergements__liste .Hebergements--container > a {
   width: 45%;
+  margin: 10px 15px 10px 15px;
+}
+
+.Hebergements__liste .Hebergements--container > a:hover {
+  margin: 5px 20px 15px 10px;
 }
 
 .Hebergements__toppopulaire {
   padding-bottom: 75px;
   margin-right: 20px;
+}
+
+.Hebergements__toppopulaire .Hebergements--container > a {
+  width: 90%;
 }

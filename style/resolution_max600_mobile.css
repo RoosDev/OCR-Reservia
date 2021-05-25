@@ -1,7 +1,3 @@
-body {
-  width: 100%;
-}
-
 /**********************************************************/
 /*       Adaptation de la mise en page de la structure    */
 /**********************************************************/
@@ -105,7 +101,13 @@ main {
 
 footer {
   margin: 0px;
+  flex-direction: column;
 }
+
+footer div[id*="footer__"] {
+  margin: 10px 20px 10px 40px;
+}
+
 footer div[id*="footer__"] h3 {
   margin-left: 0px;
 }
@@ -118,7 +120,7 @@ footer #footeralign {
 }
 
 footer div[id*="footer__"] {
-  width: 100%;
+  width: 80%;
 }
 
 footer ul {
@@ -183,14 +185,19 @@ footer a:hover {
 /* Adaptation de la mise en page de la section hebergement*/
 /**********************************************************/
 #Container__results #Hebergements .Hebergements__liste {
+  width: 100%;
   background-color: transparent;
-  margin-bottom: 0px;
-  padding: 0px;
 }
 
 #Container__results #Hebergements .Hebergements--container {
-  padding: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
+}
+
+#Container__results
+  #Hebergements
+  div[class*="Hebergements__"]
+  .Hebergements--header {
+  width: 97%;
 }
 
 #Container__results
@@ -198,9 +205,9 @@ footer a:hover {
   div[class*="Hebergements__"]
   .Hebergements--container
   > a {
-  width: 100%;
+  width: 90%;
   padding: 0px;
-  margin: 10px 20px 10px 20px;
+  margin: 10px auto 10px auto;
   display: flex;
 }
 
@@ -211,6 +218,13 @@ footer a:hover {
   > a:hover {
   box-shadow: 5px 5px 7px rgba(0, 101, 252, 0.5);
   margin: 5px 25px 15px 15px;
+}
+
+#Container__results
+  #Hebergements
+  .Hebergements__liste
+  div[class*="boxhotel_apercu--haut"] {
+  width: 98%;
 }
 
 #Container__results #Hebergements div[class*="boxhotel_description--"] {
