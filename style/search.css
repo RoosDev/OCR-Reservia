@@ -322,10 +322,16 @@ div[class*="boxhotel_description--"] {
   width: 95%;
 }
 
+.Hebergements__liste .Hebergements--header h2 {
+  width: 80%;
+  margin-left: 50px;
+}
+
+
 /* Mise en forme des box hotel : spécifique à la version haute*/
 
 .Hebergements__liste .Hebergements--container > a {
-  width: 29%;
+  width: 30%;
   flex-wrap: wrap;
 }
 
